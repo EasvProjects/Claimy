@@ -7,7 +7,7 @@
 
 	<?php
 
-	echo "Testing deployment. ";
+	echo "Testing deployment. This is another test from phpstorm";
 
 	$servername = "localhost";
 	$username = "claimy-dev";
