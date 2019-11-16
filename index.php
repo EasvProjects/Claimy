@@ -7,7 +7,7 @@
 
 	<?php
 
-	echo "This is a test. ";
+	echo "Testing deployment. ";
 
 	$servername = "localhost";
 	$username = "claimy-dev";
