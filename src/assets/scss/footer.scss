@@ -1,0 +1,107 @@
+.footer {
+font-size:1rem;
+ clip-path: polygon(50% 15%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+ letter-spacing: 0.8px;
+background: #000;
+    margin-top: -13rem;
+    color:white;
+     @include md-min{
+    margin-top: -12rem;
+     clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+    }
+        @include md-max{
+   font-size:14px;
+  }
+    .footer-top{
+    padding: 9rem 0 2.5rem;
+
+      @include md-min{
+    padding: 7rem 0 2.5rem;
+    }
+
+    }
+.download-links{
+	margin:3rem 0;
+	@include md-max{
+	margin:3rem 0 0;
+	}
+	h4{	
+    font-size:1rem;
+        @include md-max{
+   font-size:14px;
+  }
+	}
+	a{
+	color:$primary-color;
+ 	margin:0.5rem;
+	svg{
+	width:40px;
+	height:40px;
+	@include md-max{
+	width:30px;
+	height:30px;
+	}
+	  path{
+	  fill:$primary-color;
+	  }
+	}
+	}
+}
+   
+
+    .footer-logo {
+    height: 28px;
+    @include md-max{
+    height: 20px;
+    }
+}
+.footer-padding{
+padding-bottom:2rem;
+	@include md-max{
+	padding-bottom:1.2rem;
+	}
+}
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+.footer-bottom {
+
+	a {
+    margin-right: 2rem;
+
+    &:last-child{
+    margin-right: 0rem;
+    }
+
+    &:hover{
+    color: $primary-color;
+    }
+}
+
+.footer-social-media{
+display:none;
+
+@include md-max{
+	display:block;
+}
+.social-media-list{
+   li{
+   margin-bottom:1.5rem;
+   margin: 0.5rem;
+   }
+	svg{
+	height:24px;
+	width:24px;
+    path{
+	fill:white;
+	}
+	}
+}
+}
+
+}
+}
+

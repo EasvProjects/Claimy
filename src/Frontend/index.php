@@ -1,6 +1,6 @@
 <?php include_once '../src/config/init.php';
 
-$template = new Template('templates/frontpage.php');
+$template = new Template('frontend/web/index.html');
 
 // We define variables we want to push to our frontpage-template
 $template->title = 'This is a test title';

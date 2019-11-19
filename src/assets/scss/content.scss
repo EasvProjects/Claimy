@@ -1,0 +1,293 @@
+/************header************/
+ header{
+     border-bottom:1px solid rgba(255, 255, 255, 0.12);
+     position:relative;
+}
+ .navbar-expand-lg{
+     padding:1rem;
+     .navbar-nav {
+         .nav-link {
+             color:$white-color;
+             padding-right:1.25rem;
+             padding-left:1.25rem;
+
+             @include xs-max{
+             font-size:14px;
+             }
+        }
+    }
+}
+#navbarNavDropdown{
+  @include md-max{
+    position: absolute;
+    top: 73px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background: $primary-color;
+    padding: 1rem 0rem;
+  }
+}
+/************banner***********/
+ .home {
+     height: 500px;
+     clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+     @include lg-min{
+      height:100vh;
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+      }
+     background-image: -moz-linear-gradient( -30deg, rgb(20,136,204) 0%, rgb(13,101,191) 39%, rgb(28,76,185) 62%, rgb(43,50,178) 100%);
+     background-image: -webkit-linear-gradient( -30deg, rgb(20,136,204) 0%, rgb(13,101,191) 39%, rgb(28,76,185) 62%, rgb(43,50,178) 100%);
+     background-image: -ms-linear-gradient( -30deg, rgb(20,136,204) 0%, rgb(13,101,191) 39%, rgb(28,76,185) 62%, rgb(43,50,178) 100%);
+     
+}
+ .banner{
+     height:100%;
+      margin-top: -4rem;
+     @include lg-min{
+         margin-top: -5rem;
+    }
+}
+ .banner-caption{
+     h1{
+         font-size:42px;
+         font-weight:600;
+         margin-bottom:0px;
+        @include xs-max{
+        font-size:32px;
+        }
+         @include lg-min{
+          font-size:55px;
+        }
+
+    }
+     .banner-sub-text{
+         font-size:18px;
+         line-height:1.5;
+         letter-spacing:1px;
+         margin:1.6rem 0;
+         @include xs-max{
+             font-size: 16px;
+         }
+         @include lg-min{
+             font-size:22px;
+        }
+    }
+}
+ .btn{
+     font-weight:600;
+     font-size:16px;
+     padding:.5rem 1.5rem;
+       @include xs-max{
+       font-size:14px;
+     padding:.375rem 1rem;
+       }  
+     &.btn-primary{
+         background-color:$white-color;
+         color:$primary-color;
+         border-color:$white-color;
+    }
+     &.btn-lg{
+         padding:1rem 2rem;
+         font-size:20px;
+       @include xs-max{
+      font-size:16px;
+     padding:.75rem 1.5rem;
+       }  
+    }
+}
+/********about************/
+ .about-content{
+     padding: 3rem 0;
+     @include lg-min{
+         padding: 5rem 0;
+    }
+     .lead{
+     font-size:24px;
+     color:$lead-text;
+     @include xs-max{
+     font-size:18px;
+     }
+     @include lg-min{
+     font-size:41px;
+     }
+
+    }
+}
+ .news{
+     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+     padding: 6rem 0 0rem 0;
+      background:#efefef;
+     @include lg-min{
+         padding: 8rem 0 2rem 0;
+         clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    }
+     .card{
+         @include transition(0.4s);
+         .card-img{
+             img{
+                 @include transition(0.4s);
+            }
+        }
+         .card-overlay{
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
+             background: #000;
+             opacity: 0.3;
+             @include transition(opacity .3s ease-in-out);
+        }
+         .news-title{
+             font-size:20px;
+             font-weight:600;
+             @include xs-max{
+             font-size:15px;
+             }
+        }
+         &:hover{
+             .card-img{
+                 img{
+                     @include transform(rotate(10deg) scale(1.2));
+                }
+            }
+             .card-overlay{
+                opacity:0;
+            }
+        }
+    }
+}
+ .news-links{
+     @include flex();
+     li {
+         font-size: 12px;
+         position: relative;
+         padding: 8px 0;
+         margin-bottom: 16px;
+         margin-left: 30px;
+         &:before{
+             color:$primary-color;
+             content: '\2022';
+             display: inline-block;
+             font-size: 25px;
+             left: -20px;
+             position: absolute;
+             top: -1px;
+        }
+    }
+}
+ .product-item-navigation {
+    
+     a{
+     position: absolute;
+     }
+     a.prev.latest-item-nav-prev {
+    left: 5px;
+    top: 36%;
+    /* bottom: 0; */
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: -2px 1px 10px #bdbdbd;
+  }
+  a.next.latest-item-nav-next {
+    right: 5px;
+    top: 36%;
+    /* bottom: 0; */
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 2px 1px 10px #bdbdbd;
+}
+}
+ .section-header{
+}
+ .title {
+     font-size:42px;
+     font-weight:700;
+     margin-bottom: 2rem;
+     @include lg-min{
+         font-size:52px;
+    }
+     @include md-max {
+         margin-bottom: 2rem;
+    }
+     @include xs-max {
+         margin-bottom: 1rem;
+         font-size:28px;
+    }
+}
+ .mainsection {
+     margin-bottom: 13rem;
+     padding-top: 3rem;
+     @include lg-min {
+         padding-top: 5rem;
+    }
+}
+ .owl-carousel .owl-item {
+     float: left;
+     .card{
+         margin: 1rem;
+         border-radius: 0;
+         border:0px;
+         background-color:#efefef;
+    }
+}
+/*********footer***********/
+ .footer{
+     background:$primary-color;
+}
+ .footer-logo{
+ 
+@include md-max{
+  margin:0 auto;
+}
+ }
+ .footer-top{
+
+}
+ .footer-bottom{
+     border-top:1px solid rgba(255, 255, 255, 0.12);
+}
+ .copyright{
+     font-size:13px;
+     letter-spacing:1px;
+     color:#ceccd1;
+     a{
+         opacity: 0.7;
+         color: $white-color;
+         &:hover{
+             opacity: 1;
+        }
+    }
+}
+ .footer-links{
+      margin-bottom:1.5rem;
+      
+      @include lg-min{
+      margin-bottom:0rem;
+      }
+     a {
+         color: $white-color;
+          @include lg-min{
+            margin-bottom: 1rem;
+          }
+         display: block;
+         margin-bottom: 0.5rem;
+         opacity: 0.7;
+         &:last-child{
+             margin-bottom:0px;
+        }
+         &:hover{
+             opacity:1;
+        }
+    }
+}

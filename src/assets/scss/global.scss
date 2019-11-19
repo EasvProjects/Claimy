@@ -1,0 +1,50 @@
+body{
+  font-family:$primary-font;
+   font-size:16px;
+  color:$text-color;
+ // letter-spacing:1px;
+  @include md-max{
+   font-size:16px;
+  }
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  line-height:1.2;
+  margin-bottom:0;
+}
+p{
+  margin-bottom:0;
+}
+.logo{
+
+}
+.font-bold{
+  font-weight:700;
+}
+.font-regular{
+  font-weight:400;
+}
+.font-semi-bold{
+  font-weight:600;
+}
+.font-medium{
+  font-weight:500;
+}
+a:hover{
+  text-decoration:none;
+}
+.lead{
+	     @include md-max{
+  }
+}
+.title{
+	
+ @include md-max{
+   font-size:2rem;
+  }
+}
+.btn{
+  &:focus, &.focus{
+  box-shadow:none;
+  }
+}
+
