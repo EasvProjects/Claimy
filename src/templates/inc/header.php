@@ -13,5 +13,5 @@
                 <li role="presentation"><a href="dashboard.php">Dashboard</a></li>
             </ul>
         </nav>
-        <h3 class="text-muted"><?php echo SITE_TITLE; ?></h3>
+        <h3 class="text-muted"><?php echo title; ?></h3>
     </div>
