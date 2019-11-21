@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+$primary-color:#013686;
+$text-color:#222222;
+$secondary-color:#555555;
+$lead-text:#2936b3;
+$white-color:#ffffff;
+$primary-link:$primary-color;
+$primary-font:'Poppins', sans-serif;
+//1c0436
+//38234e
+//290053
+//000c3a
+
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin flex(){
+display:flex;
+display:-ms-flexbox !important;
+}
+@mixin inline-flex(){
+display:inline-flex;
+display:-ms-inline-flexbox !important;
+}
+@mixin bg-grd($dir, $color1, $color2, $color3){
+background:-moz-linear-gradient($dir, $color1, $color2, $color3);
+background:-webkit-gradient($dir, $color1, $color2, $color3);
+background:-webkit-linear-gradient($dir, $color1, $color2, $color3);
+background:-o-linear-gradient($dir, $color1, $color2, $color3);
+background:-ms-linear-gradient($dir, $color1, $color2, $color3);
+background:linear-gradient($dir, $color1, $color2, $color3);
+}
+
+@mixin shadow($shadow){
+  -webkit-box-shadow:$shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow:$shadow;
+}
+@mixin placeholder {
+  ::placeholder{@content}
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin transition($hover) {
+  -webkit-transition: $hover;
+  -ms-transition: $hover;
+  -o-transition:$hover;
+  -moz-transition: $hover;
+  transition: $hover;
+
+}
+@mixin sticky{
+   position: sticky;
+   position: -webkit-sticky;
+   position: -moz-sticky;
+   position: -ms-sticky;
+   position: -o-sticky;
+}
+
+
+@mixin animation ($animation1 , $animation2){
+ -webkit-animation: $animation1 , $animation2;
+  -ms-animation:$animation1 , $animation2;
+  animation:$animation1 , $animation2;
+  
+}
+@mixin transform-origin($origin){
+  transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -webkit-transform-origin: $origin;
+    -o-transform-origin: $origin;
+}
+
+@mixin keyframes($animationname) {
+  @-webkit-keyframes #{$animationname} {
+      @content;
+  }
+  @-moz-keyframes #{$animationname} {
+      @content;
+  }
+  @keyframes #{$animationname} {
+      @content;
+  }
+}
+
+@mixin background-opacity($hex, $opacity: 0.3) {
+    background: $hex; /* The Fallback */
+    background: rgba($hex, $opacity);
+}
+
+@mixin column-count($count){
+  column-count:$count;
+  -webkit-column-count:$count;
+  -ms-column-count:$count;
+  -o-column-count:$count;
+  -moz-column-count:$count;
+}
+
+@mixin column-gap($gap){
+   column-gap:$gap;
+   -webkit-column-gap:$gap;
+   -ms-column-gap:$gap;
+   -o-column-gap:$gap;
+   -moz-column-gap:$gap;
+}
+
+
