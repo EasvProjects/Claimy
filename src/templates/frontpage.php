@@ -254,14 +254,14 @@
 <div class="our-class">
 <form>
 <br>
-														Comapny:<br/> <input/><br/>
-														Ticket No:<br/><input/><br/>
-														Date:<br/><input/><br/>
-														Time:<br/><input/><br/>
-														Address:<br/><input/><br/>
-														Reg No:<br/><input/><br/>
-														Brand:<br/><input/><br/>
-														Model:<br/><input/><br/>
+Comapny:<br/> <input/><br/>
+Ticket No:<br/><input/><br/>
+Date:<br/><input/><br/>
+Time:<br/><input/><br/>
+Address:<br/><input/><br/>
+Reg No:<br/><input/><br/>
+Brand:<br/><input/><br/>
+Model:<br/><input/><br/>
 <br/>
 </br></form>
 </div>
