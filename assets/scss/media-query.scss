@@ -2,7 +2,7 @@ $xs-phone: 575.98px;
 $phone: 767.98px;
 $tablet: 991.98px;
 $desktop: 1199.98px;
-$xl-desktop:1500px;
+$xl-desktop: 1500px;
 
 
 //-------max direction------
@@ -80,25 +80,24 @@ $xl-desktop:1500px;
 }
 
 
-
 //-------min-max direction------
 
 // Large desktop device width  (desktops, 992px and up)
-@mixin desktop{
+@mixin desktop {
   @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
     @content;
   }
 }
 
 // Medium devices (tablets, 768px and up)
-@mixin tablet{
+@mixin tablet {
   @media (min-width: #{$phone}) and (max-width: #{$tablet - 1px}) {
     @content;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
-@mixin phone{
+@mixin phone {
   @media (min-width: #{$xs-phone}) and (max-width: #{$phone - 1px}) {
     @content;
   }

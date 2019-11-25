@@ -4,6 +4,7 @@
   @include md-max {
     overflow: initial;
   }
+
   .nav-link {
     color: $lead-text;
     text-transform: uppercase;
@@ -16,6 +17,7 @@
     @include md-min {
       @include flex();
     }
+
     svg {
       @include md-min {
         margin-left: 1.5rem;
@@ -27,15 +29,18 @@
       height: 18px;
       width: 18px;
       margin-bottom: 0.2rem;
+
       .icon-fill {
         fill: $primary-color;
         opacity: .5;
       }
+
       .icon-outline {
         fill: $secondary-color;
         opacity: .7;
       }
     }
+
     @include md-max {
       font-size: 12px;
     }
@@ -63,9 +68,11 @@
   @include sm-max {
     @include transform(scale(0.7));
   }
+
   &:focus {
     outline: none;
   }
+
   span.icon-bar {
     @include transition(all 0.2s);
     background: $text-color;
@@ -76,22 +83,27 @@
     text-align: right;
     margin-left: auto;
     opacity: .8;
+
     &.bottom-bar {
       margin-bottom: 0px;
       width: 22px;
     }
   }
+
   &.cross {
     .icon-bar {
       @include transition(all 0.2s);
     }
+
     .top-bar {
       @include transform(rotate(45deg));
       position: absolute;
     }
+
     .middle-bar {
       opacity: 0;
     }
+
     .bottom-bar {
       @include transform(rotate(-45deg));
       width: 30px !important;
@@ -140,9 +152,11 @@
     li {
       margin-bottom: 1.5rem;
     }
+
     svg {
       height: 24px;
       width: 24px;
+
       path {
         fill: $text-color;
       }
@@ -153,6 +167,7 @@
 .home,
 .main {
   position: relative;
+
   .social-media {
     position: absolute;
     right: 28px;
@@ -173,11 +188,13 @@
   height: 688px;
   position: relative;
   text-align: center;
+
   &.inner-banner {
     height: 300px;
     @include md-max {
       height: 200px;
     }
+
     .banner-content {
       padding: 1rem 0rem 0 0rem;
       @include lg-min {
@@ -185,18 +202,22 @@
       }
     }
   }
+
   @include md-max {
     height: 480px;
   }
+
   .btn-banner {
     &:hover {
       border-color: $primary-color;
       color: white;
     }
+
     svg {
       fill: $primary-color;
     }
   }
+
   .banner-overlay {
     background: url('../images/banner-overlay.png');
     position: absolute;
@@ -210,9 +231,11 @@
       background: rgba(0, 0, 0, 0.42);
     }
   }
+
   .banner-caption {
     text-align: left;
   }
+
   .banner-content {
     @include flex;
     height: calc(100% - 98px);
@@ -223,11 +246,13 @@
     @include md-max {
       padding: 3rem 0rem 0 0rem;
     }
+
     .row {
       flex: 1;
       margin: 0px;
       align-items: flex-end;
     }
+
     .banner-caption {
       .restaurant-name {
         font-size: 80px;
@@ -238,10 +263,12 @@
         @include md-max {
           font-size: 38px;
         }
+
         &:first-letter {
           color: $primary-color;
         }
       }
+
       .banner-sub-text {
         font-size: 16px;
         margin-bottom: 0rem;
@@ -260,6 +287,7 @@
         }
       }
     }
+
     .restaurant-status {
       font-weight: 500;
       font-size: 20px;
@@ -272,6 +300,7 @@
         margin-top: 2rem;
         margin-left: 2rem !important;
       }
+
       .status-badge {
         height: 8px;
         width: 10px;
@@ -297,6 +326,7 @@
     bottom: -4.15rem;
     padding: 1.2rem;
   }
+
   #supper {
     height: 60px;
     width: 60px;
@@ -304,6 +334,7 @@
       height: 30px;
       width: 30px;
     }
+
     path {
       fill: $secondary-color;
     }
@@ -315,7 +346,8 @@
     font-size: 1rem;
     letter-spacing: 0.5px;
     padding-left: 1rem;
-    +.breadcrumb-item::before {
+
+    + .breadcrumb-item::before {
       height: 17px;
       width: 26px;
       content: "";
@@ -325,9 +357,11 @@
       padding: 0;
       margin-right: 1rem;
     }
+
     a {
       color: $primary-color;
     }
+
     &.active {
       color: white;
     }
