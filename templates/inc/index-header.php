@@ -19,7 +19,7 @@
         <header class="bg-grd">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="../../controllers/index-controller.php">
+                    <a class="navbar-brand" href="../../index.php">
                         <!--  <img src="assets/images/logo.png" class="logo" alt=""> -->
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
