@@ -9,8 +9,6 @@
                     <h2 class="banner-sub-text font-medium">With <span class="font-bold">Claimy</span> you can send a
                         claim We help you to <br/>
                         get rid of the ticket
-                    <?= $name ?></h2>
-                    <?= $name ?>
                     <a href="#" class="btn btn-primary btn-lg">Start your claim</a>
                 </div>
             </div>
