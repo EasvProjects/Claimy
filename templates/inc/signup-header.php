@@ -14,5 +14,6 @@
     <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
     <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
+    <script src="/assets/js/jQuery_custom.js"></script>
 </head>
 <body>
