@@ -1,12 +1,6 @@
 <?php
 
-require 'core/bootstrap.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$request = $_SERVER['REQUEST_URI'];
-
-switch ($request) {
-    case '':
-    case '/' :
-        require 'controllers/index-controller.php';
-        break;
-}
+require 'templates/index-template.php';
