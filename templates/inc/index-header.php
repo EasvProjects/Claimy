@@ -12,6 +12,7 @@
     <link href="../../assets/css/owl.carousel.css" rel="stylesheet"/>
     <link href="../../assets/css/style.css" type="text/css" rel="stylesheet"/>
     <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet"/>
+    <script src="../../assets/js/jQuery_custom.js"></script>
 </head>
 <body class="">
 <div class="main position-relative">

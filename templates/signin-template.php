@@ -28,13 +28,13 @@
                                     </div>
                                     <div class="form-group col-12 username">
 
-                                        <input type="text" class="form-control w-100" id=""
+                                        <input type="text" class="form-control w-100" name="email" id="email-field"
                                                placeholder="Enter E-mail Address">
                                     </div>
                                     <div class="form-group col-12 password">
 
-                                        <input type="Password" class="form-control" id=""
-                                               placeholder="Enter your password">
+                                        <input type="Password" class="form-control" id="password-field"
+                                               name= "password" placeholder="Enter your password">
                                     </div>
                                     <div class="col-12 d-md-flex justify-content-between">
                                         <div class="custom-control custom-checkbox mr-sm-2 form-group">
@@ -46,7 +46,7 @@
                                                 Password?</a></p>
                                     </div>
                                     <div class="col-12 text-lg-center">
-                                        <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0">Log
+                                        <button type="submit" name="SubmitButton1" class="btn btn-primary btn-grd mt-3 w-100 border-0"  onclick="myAjax()">Log
                                             In
                                         </button>
                                     </div>

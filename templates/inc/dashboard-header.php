@@ -3,6 +3,7 @@
 <head>
     <title>Claimy</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <script src="/assets/js/jQuery_custom.js"></script>
 </head>
 <body>
 <div class="container">
