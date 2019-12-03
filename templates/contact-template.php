@@ -128,34 +128,32 @@
                                         <h2 class="form-title text-center mb-lg-3">Get in Touch</h2>
                                     </div>
                                     <div class="form-group col-12 ">
-                                        <input type="text" class="form-control w-100" placeholder="Name"
-                                               required="required"
-                                               data-error="Name is required.">
+                                         <input type="text" class="form-control w-100"  placeholder="Name" name="name" value=<?= $name?>>
+                                        <span class="error"><?= $name_error?></span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group col-12 ">
-                                        <input type="text" class="form-control w-100" placeholder="E-mail"
-                                               required="required"
-                                               data-error="Valid email is required.">
+                                        <input type="text" class="form-control w-100" placeholder="E-mail" name="email" value=<?= $email?>>
+                                        <span class="error"><?= $email_error?></span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group col-12 ">
-                                        <input type="text" class="form-control w-100" placeholder="Phone no."
-                                               required="required"
-                                               data-error="Phone no. is required.">
+                                        <input type="text" class="form-control w-100" placeholder="Phone no." name="phone" value=<?= $phone?>>
+                                        <span class="error"><?= $phone_error?></span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group col-12 ">
-                                        <textarea class="form-control w-100 h-auto" rows="3"
-                                                  placeholder="Message"></textarea>
+                                        <textarea class="form-control w-100 h-auto" rows="3" name="message"
+                                                  placeholder="Message" ><?= $message?></textarea>
+                                        <span class="error"><?= $message_error?></span>
                                     </div>
 
                                     <div class="form-group col-12">
                                         <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
                                              data-callback="verifyRecaptchaCallback"
                                              data-expired-callback="expiredRecaptchaCallback"></div>
-                                        <input class="form-control d-none" data-recaptcha="true" required
-                                               data-error="Please complete the Captcha">
+                                        <input class="form-control d-none" data-recaptcha="true"
+                                               data-error="Please complete the Captcha" placeholder="HEEEEEEELOOO">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="col-12 text-lg-center">

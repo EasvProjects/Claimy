@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="claimy-server">
+    <serverData>
+      <paths name="claimy-server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="claimy" local="$PROJECT_DIR$" web="/claimy" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
