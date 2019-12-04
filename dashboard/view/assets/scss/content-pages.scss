@@ -1,0 +1,60 @@
+.text-content {
+    margin-bottom: 2rem;
+}
+small{
+	font-size:86%;
+}
+ @include placeholder{
+ font-size:14px;
+ opacity:0.8;
+ }
+
+.attachments{
+	.case-value{
+	img{
+	margin-right:10px;
+	height:40px;
+	}
+	}
+}
+.sad-img-div{
+position: absolute;
+    right: 15px;
+    top:15px;
+	  img{
+	    height: 70px;
+	  }
+}
+.form-control{
+	background-color: white;
+    height: 35px;
+    padding:.375rem 0.5rem;  
+    font-size:14px;
+  
+    @include sm-max{
+     font-size:13px;
+    
+    }
+}
+
+
+.under-process-table li{
+@include lg-min{
+	.case-header {
+     min-width: 323px;
+}
+}
+.case-value{
+    color:$secondary-color;
+    }
+
+ }
+
+
+@media(max-width:768px){
+	.sad-img-div{
+	img{
+	height:50px;
+	}
+	}
+}
