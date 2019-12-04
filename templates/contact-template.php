@@ -173,7 +173,7 @@
 </section><!---->
 </div>
 
-<script type="text/javascript">
+<!--script type="text/javascript">
     $(function () {
 
         window.verifyRecaptchaCallback = function (response) {
@@ -210,5 +210,5 @@
             }
         })
     });
-</script>
+</script-->
 <?php include 'inc/footer.php'; ?>
