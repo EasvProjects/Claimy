@@ -18,30 +18,38 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-7 d-flex">
+                                    <form id="contact-form" method="post" action="../controllers/signup-controller.php" role="form"
                                     <div class="form-row login-form align-self-center">
                                         <div class="form-group col-12 ">
                                             <h1 class="form-title text-center mb-lg-3">Sign Up</h1>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="text" class="form-control w-100" placeholder="Fullname">
+                                            <input type="text" class="form-control w-100" placeholder="Fullname" name="fullname" value="<?=$fullname?>">
+                                            <span class="error"><?= $fullname_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="text" class="form-control w-100" placeholder="Country">
+                                            <input type="text" class="form-control w-100" placeholder="Country" name="country" value="<?=$country?>">
+                                            <span class="error"><?= $country_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="text" class="form-control w-100" placeholder="Address">
+                                            <input type="text" class="form-control w-100" placeholder="Address" name="address" value="<?=$address?>">
+                                            <span class="error"><?= $address_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="text" class="form-control w-100" placeholder="Phone no.">
+                                            <input type="text" class="form-control w-100" placeholder="Phone no." name="phone" value="<?=$phone?>">
+                                            <span class="error"><?= $phone_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="text" class="form-control w-100" placeholder="E-mail">
+                                            <input type="text" class="form-control w-100" placeholder="E-mail" name="email" value="<?=$email?>">
+                                            <span class="error"><?= $email_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="Password" class="form-control" placeholder="Password">
+                                            <input type="Password" class="form-control" placeholder="Password" name="password"value="<?=$password?>">
+                                            <span class="error"><?= $password_error?></span>
                                         </div>
                                         <div class="form-group col-12 ">
-                                            <input type="Password" class="form-control" placeholder="Confirm password">
+                                            <input type="Password" class="form-control" placeholder="Confirm password" name="confirm_password" value="<?=$confirm_password?>">
+                                            <span class="error"><?= $confirm_password_error?></span>
                                         </div>
 
                                         <div class="col-12 text-lg-center">
