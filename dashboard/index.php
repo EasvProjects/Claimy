@@ -3,8 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require 'dashboard/view/signin.php';
-//require 'site/view/under-maintenance.php';
+require '../dashboard/view/signin.php';
 //require 'site/controllers/';
 
 
