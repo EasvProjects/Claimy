@@ -1,4 +1,5 @@
 <?php
+
 $content = $_POST;
 print_r ($content);
 

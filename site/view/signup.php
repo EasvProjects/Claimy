@@ -8,12 +8,12 @@
  <meta name="keywords" content="">
  <meta name="author" content="">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
- <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
- <link href="assets/css/owl.theme.css" rel="stylesheet" />
- <link href="assets/css/owl.carousel.css" rel="stylesheet" />
- <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
- <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+ <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/owl.theme.css" rel="stylesheet" />
+ <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
+ <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+ <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
 </head>
 <body>
   
@@ -42,8 +42,8 @@
                   <div class="form-group pl-0 pl-lg-5">
                   <h4 class="mb-2 Welcome-text">Welcome to
                   </h4>
-                  <a href="index.php" class="">
-                    <img src="assets/images/logo.png" class="footer-logo d-block my-3" alt="Claimy" title="Claimy" height="22">
+                  <a href="../../site/controllers/index-controller.php" class="">
+                    <img src="../../assets/images/logo.png" class="footer-logo d-block my-3" alt="Claimy" title="Claimy" height="22">
                   </a>
                   
                   <p><small>-The preferred claim company</small><p/>
@@ -81,16 +81,17 @@
               
               <div class="form-group col-12 text-lg-center">
                 <button type="submit" class="btn btn-primary btn-grd w-100 border-0">Sign Up</button>
+
               </div>
 <div class="w-100 text-center">
-                        <p class=" text-muted mb-0"><small>Already having an account with claimy?</small><a href="signin.php" class="btn-link ml-2">Login</a></p>
+                        <p class=" text-muted mb-0"><small>Already having an account with claimy?</small><a href="../../site/controllers/signin-controller.php" class="btn-link ml-2">Login</a></p>
                      
                    </div>
                 <div class="divider text-center">
                   <span class="or bg-white rounded-circle shadow-sm d-inline">OR</span>
                 </div>
                 <div class="d-flex justify-content-center w-100">
-                  <a href="#" class="btn btn-icon"><div class="">
+                  <a href="../../site/controllers/myaccount-controller.php" class="btn btn-icon"><div class="">
                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
 
   <circle style="fill:#3B5998;" cx="56.098" cy="56.098" r="56.098"></circle>
@@ -100,7 +101,7 @@
 </div>
                     <span>Login with Facebook</span>
                   </a>
-                  <a href="#" class="btn btn-icon">
+                  <a href="../../site/controllers/signin-controller.php" class="btn btn-icon">
                     <div>
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
     <circle id="XMLID_30_" style="fill:#DC4E41;" cx="56.098" cy="56.097" r="56.098"></circle>
@@ -147,8 +148,8 @@
 </body>
 
 
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
    <script>
 
    </script>

@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
   <html>
   <head>
     <title>
@@ -9,8 +9,8 @@
    <meta name="author" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
-   <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
  </head>
  <body>
 
