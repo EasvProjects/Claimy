@@ -27,4 +27,3 @@ if($_POST['action']=='call_this') {
         echo 'myaccount-controller.php';
     }
 }
-
