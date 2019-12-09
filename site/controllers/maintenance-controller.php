@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require '../view/under-maintenance.php';
+require 'templates/index-template.php';
 $input = 'KimLangholz';
 // Store the cipher method
 $ciphering = "AES-128-CTR";
