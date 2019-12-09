@@ -1,20 +1,6 @@
 <!DOCTYPE html >
 <html>
-<head>
-  <title>
-   Claimy
- </title>
- <meta name="description" content="">
- <meta name="keywords" content="">
- <meta name="author" content="">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
- <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
- <link href="../../assets/css/owl.theme.css" rel="stylesheet" />
- <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
- <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
- <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
-</head>
+<?php include 'inc/header-login.php'; ?>
 <body>
   
 
@@ -80,7 +66,7 @@
                </div>
               
               <div class="form-group col-12 text-lg-center">
-                <button type="submit" class="btn btn-primary btn-grd w-100 border-0">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-grd w-100 border-0" onclick="window.location.href = '../../site/controllers/myaccount-controller.php';">Sign Up</button>
 
               </div>
 <div class="w-100 text-center">
@@ -101,7 +87,7 @@
 </div>
                     <span>Login with Facebook</span>
                   </a>
-                  <a href="../../site/controllers/signin-controller.php" class="btn btn-icon">
+                  <a href="../../site/controllers/myaccount-controller.php" class="btn btn-icon">
                     <div>
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
     <circle id="XMLID_30_" style="fill:#DC4E41;" cx="56.098" cy="56.097" r="56.098"></circle>
