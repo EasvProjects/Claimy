@@ -7,6 +7,7 @@ class security
      * @return string -> Encrypted version of the $input
      * @throws Exception -> Will throw exception
      */
+    //this is a test
     function encrypt($input)
     {
         if (is_null(getenv("key"))) {
