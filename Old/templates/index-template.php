@@ -1,4 +1,5 @@
 <?php include 'inc/index-header.php'; ?>
+
 <div class="banner d-flex align-items-center">
     <!--   <div class="banner-overlay"></div> -->
     <div class="container">
@@ -8,7 +9,7 @@
                     <h1 class="">Did you get a parking <br/> ticket by mistake?</h1>
                     <h2 class="banner-sub-text font-medium">With <span class="font-bold">Claimy</span> you can send a
                         claim We help you to <br/>
-                        get rid of the ticket
+                        get rid of the ticket <?= 'TEST' ?><br/></h2>
                     <a href="#" class="btn btn-primary btn-lg">Start your claim</a>
                 </div>
             </div>
