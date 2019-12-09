@@ -8,12 +8,12 @@
  <meta name="keywords" content="">
  <meta name="author" content="">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
- <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
- <link href="assets/css/owl.theme.css" rel="stylesheet" />
- <link href="assets/css/owl.carousel.css" rel="stylesheet" />
- <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
- <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+ <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/owl.theme.css" rel="stylesheet" />
+ <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
+ <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+ <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
 </head>
 <body>
 <section class="form-section py-4 d-flex">
@@ -79,8 +79,8 @@
 </body>
 
 
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
    <script>
 
    </script>

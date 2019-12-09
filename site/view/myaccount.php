@@ -9,12 +9,12 @@
    <meta name="author" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
    <!-- <link href="assets/css/animate.css" type="text/css" rel="stylesheet" /> -->
-   <link href="assets/css/owl.theme.css" rel="stylesheet" />
-   <link href="assets/css/owl.carousel.css" rel="stylesheet" />
-   <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-   <link href="assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/css/owl.theme.css" rel="stylesheet" />
+   <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
+   <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
  </head>
  <body class="">
   <div class="main position-relative">
@@ -34,35 +34,35 @@
          </a>
          <a href="#" class="btn btn-primary btn-login  d-block d-lg-none ml-auto mr-3">Login</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-           <img src="assets/fonts/icons/menu.svg" width="20">
+           <img src="../../assets/fonts/icons/menu.svg" width="20">
          </button>
 
          <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home</a>
+              <a class="nav-link" href="../../site/controllers/index-controller.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="news.php">News</a>
+            <a class="nav-link" href="../../site/controllers/news-controller.php">News</a>
           </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About Us</a>
+              <a class="nav-link" href="../../site/controllers/about-controller.php">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.php">Contact Us</a>
+              <a class="nav-link" href="../../site/controllers/contact-controller.php">Contact Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Wisam
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="myaccount.php">My cases</a>
-                <a class="dropdown-item" href="setting.php">User setting</a>
-                <a class="dropdown-item" href="signin.php">Logout</a>
+                <a class="dropdown-item" href="../../site/controllers/myaccount-controller.php">My cases</a>
+                <a class="dropdown-item" href="../../site/controllers/setting-controller.php">User setting</a>
+                <a class="dropdown-item" href="../../site/controllers/index-controller.php">Logout</a>
               </div>
             </li>
           </ul>
-            <!-- <a href="signin.html" class="btn btn-primary btn-login d-none d-lg-block">Login</a> -->
+            <!-- <a href="signin.php" class="btn btn-primary btn-login d-none d-lg-block">Login</a> -->
         </div>
       </nav>
     </div>
@@ -76,13 +76,13 @@
     <div class="mb-3 ">
      <ul class="nav nav-pills navbar-inner justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" href="myaccount.php">My cases</a>
+        <a class="nav-link active" href="../../site/controllers/myaccount-controller.php">My cases</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="setting.php">User setting</a>
+        <a class="nav-link" href="../../site/controllers/setting-controller.php">User setting</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="signin.php">logout</a>
+        <a class="nav-link" href="../../site/controllers/index-controller.php">logout</a>
       </li>
     </ul>
   </div>
@@ -127,7 +127,7 @@
 
         </div>
         <div class="">
-          <a href="Rejected.html" class="btn btn-primary btn-grd">View Claim</a>
+          <a href="../../site/controllers/reject-controller.php" class="btn btn-primary btn-grd">View Claim</a>
         </div>
       </div>
       <div class="claim-status text-center ">
@@ -137,16 +137,16 @@
           <a class="nav-link " href="#">Sent</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="under-process.php" >Under Process</a>
+          <a class="nav-link active" href="../../site/controllers/underprocess-controller.php" >Under Process</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Info req.</a>
+          <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Info req.</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Won</a>
+          <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Won</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="rejected.php">Rejected</a>
+          <a class="nav-link disabled" href="../../site/controllers/reject-controller.php">Rejected</a>
         </li>
       </ul>
 <!-- <div class="btn-group" role="group" aria-label="Basic example">
@@ -191,16 +191,16 @@
     <a class="nav-link disabled" href="#">Sent</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="under-process.php">Under Process</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Under Process</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Info req.</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Info req.</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link  active" href="#">Won</a>
+    <a class="nav-link  active" href="../../site/controllers/underprocess-controller.php">Won</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="rejected.php">Rejected</a>
+    <a class="nav-link disabled" href="../../site/controllers/reject-controller.php">Rejected</a>
   </li>
 </ul>
 <!-- <div class="btn-group" role="group" aria-label="Basic example">
@@ -242,19 +242,19 @@
  <!--   <span>Claim Status</span> -->
  <ul class="btn-group nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Sent</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Sent</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="under-process.php">Under Process</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Under Process</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Info req.</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Info req.</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#">Won</a>
+    <a class="nav-link disabled" href="../../site/controllers/underprocess-controller.php">Won</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="rejected.php">Rejected</a>
+    <a class="nav-link active" href="../../site/controllers/reject-controller.php">Rejected</a>
   </li>
 </ul>
 <!-- <div class="btn-group" role="group" aria-label="Basic example">
@@ -272,258 +272,15 @@
 </div>
 </section>
 </div>
-<footer class="footer text-center text-md-left">
-  <div class="footer-top  py-5">
-   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-       <img src="assets/images/logo.png" class="footer-logo d-block" alt="Claimy" title="Claimy" height="20">
 
-       <a href="#" class="btn btn-primary my-4">Start your claim</a>
-       <ul class="list-unstyled d-flex justify-content-center justify-content-md-start footer-social-links">
-         <li>
-          <a href="#">
-           <svg  version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           width="20px" height="20px" viewBox="0 0 470.513 470.513" style="enable-background:new 0 0 470.513 470.513;"
-           xml:space="preserve">
-           <path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
-           c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
-           c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z"/></svg>
-         </a>
-       </li>
-       <li>
-        <a href="#">
-          <svg version="1.1"  width="20px" height="20px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-          <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-          c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-          c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-          c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-          c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-          c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-          C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-          C480.224,136.96,497.728,118.496,512,97.248z"/>
-        </svg>
-      </a></li>
-      <li>
-        <a href="#">
-          <svg version="1.1"  width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-          <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
-          C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
-          h192c61.76,0,112,50.24,112,112V352z"/>
-          <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
-          c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
-          <circle cx="393.6" cy="118.4" r="17.056"/>
-        </svg>
-      </a></li>
-      <li>
-        <a href="#">
-         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="20px" height="20px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+      <?php include 'inc/footer.php'; ?>
 
-         <g id="post-linkedin">
-          <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
-          M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
-          S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
-          V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
-        </g>
-      </svg>
-
-    </a></li>
-  </ul>
 </div>
-    <!--   <div class="col-md-8">
-      <div class="row"> -->
-
-        <div class="col-md-4">
-          <div class="footer-links">
-            <a class="" href="news.php">News</a>
-            <a class="" href="about.php">About us</a>
-            <a class="" href="contact.php">Contact us</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="footer-links">
-            <a class="" href="cookies.php">Cookies </a>
-            <a class="" href="gdpr.php">GDPR</a>
-            <a class="" href="terms-of-service.php">Terms of service</a>
-          </div>
-          <div class="languages d-flex mt-3 justify-content-center justify-content-md-start ">
-            <a href="#" class="mr-3">
-              <svg version="1.1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-              <path style="fill:#FF4B55;" d="M503.172,423.725H8.828c-4.875,0-8.828-3.953-8.828-8.828V97.104c0-4.875,3.953-8.828,8.828-8.828
-              h494.345c4.875,0,8.828,3.953,8.828,8.828v317.793C512,419.773,508.047,423.725,503.172,423.725z"/>
-              <polygon style="fill:#F5F5F5;" points="512,229.518 211.862,229.518 211.862,88.277 158.897,88.277 158.897,229.518 0,229.518
-              0,282.484 158.897,282.484 158.897,423.725 211.862,423.725 211.862,282.484 512,282.484 "/>
-            </svg>
-            <small class="ml-1">Dansk</small>
-          </a>
-          <a href="#">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-            <path style="fill:#F5F5F5;" d="M503.172,423.725H8.828c-4.875,0-8.828-3.953-8.828-8.828V97.104c0-4.875,3.953-8.828,8.828-8.828
-            h494.345c4.875,0,8.828,3.953,8.828,8.828v317.793C512,419.773,508.047,423.725,503.172,423.725z"/>
-            <g>
-              <path style="fill:#FF4B55;" d="M512,114.081H0V97.104c0-4.875,3.953-8.828,8.828-8.828h494.345c4.875,0,8.828,3.953,8.828,8.828
-              L512,114.081L512,114.081z"/>
-              <rect y="191.491" style="fill:#FF4B55;" width="512" height="25.804"/>
-              <rect y="139.881" style="fill:#FF4B55;" width="512" height="25.804"/>
-              <path style="fill:#FF4B55;" d="M512,268.903H8.828c-4.875,0-8.828-3.953-8.828-8.828v-16.977h512V268.903z"/>
-              <rect y="346.321" style="fill:#FF4B55;" width="512" height="25.804"/>
-              <path style="fill:#FF4B55;" d="M503.172,423.725H8.828c-4.875,0-8.828-3.953-8.828-8.828v-16.976h512v16.977
-              C512,419.773,508.047,423.725,503.172,423.725z"/>
-              <rect y="294.711" style="fill:#FF4B55;" width="512" height="25.804"/>
-            </g>
-            <path style="fill:#41479B;" d="M229.517,88.277H8.828C3.953,88.277,0,92.229,0,97.104v162.97c0,4.875,3.953,8.828,8.828,8.828
-            h220.69c4.875,0,8.828-3.953,8.828-8.828V97.104C238.345,92.229,234.392,88.277,229.517,88.277z"/>
-            <g>
-              <path style="fill:#F5F5F5;" d="M24.789,108.538l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928L24,122.843l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C23.463,107.779,24.535,107.779,24.789,108.538z"/>
-              <path style="fill:#F5F5F5;" d="M24.789,139.192l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928L24,153.497l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C23.463,138.434,24.535,138.434,24.789,139.192z"/>
-              <path style="fill:#F5F5F5;" d="M24.789,169.846l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928L24,184.151l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C23.463,169.088,24.535,169.088,24.789,169.846z"/>
-              <path style="fill:#F5F5F5;" d="M24.789,200.501l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928L24,214.806l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C23.463,199.742,24.535,199.742,24.789,200.501z"/>
-              <path style="fill:#F5F5F5;" d="M24.789,231.155l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928L24,245.46l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C23.463,230.395,24.535,230.395,24.789,231.155z"/>
-              <path style="fill:#F5F5F5;" d="M48.582,123.567l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C47.255,122.809,48.329,122.809,48.582,123.567z"/>
-              <path style="fill:#F5F5F5;" d="M48.582,154.222l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.165-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C47.255,153.463,48.329,153.463,48.582,154.222z"/>
-              <path style="fill:#F5F5F5;" d="M48.582,184.876l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C47.255,184.117,48.329,184.117,48.582,184.876z"/>
-              <path style="fill:#F5F5F5;" d="M48.582,215.53l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C47.255,214.772,48.329,214.772,48.582,215.53z"/>
-              <path style="fill:#F5F5F5;" d="M72.375,108.538l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C71.049,107.779,72.122,107.779,72.375,108.538z"/>
-              <path style="fill:#F5F5F5;" d="M72.375,139.192l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C71.049,138.434,72.122,138.434,72.375,139.192z"/>
-              <path style="fill:#F5F5F5;" d="M72.375,169.846l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C71.049,169.088,72.122,169.088,72.375,169.846z"/>
-              <path style="fill:#F5F5F5;" d="M72.375,200.501l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C71.049,199.742,72.122,199.742,72.375,200.501z"/>
-              <path style="fill:#F5F5F5;" d="M72.375,231.155l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C71.049,230.395,72.122,230.395,72.375,231.155z"/>
-              <path style="fill:#F5F5F5;" d="M96.169,123.567l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C94.842,122.809,95.916,122.809,96.169,123.567z"/>
-              <path style="fill:#F5F5F5;" d="M96.169,154.222l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.165-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C94.842,153.463,95.916,153.463,96.169,154.222z"/>
-              <path style="fill:#F5F5F5;" d="M96.169,184.876l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C94.842,184.117,95.916,184.117,96.169,184.876z"/>
-              <path style="fill:#F5F5F5;" d="M96.169,215.53l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C94.842,214.772,95.916,214.772,96.169,215.53z"/>
-              <path style="fill:#F5F5F5;" d="M119.962,108.538l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.026-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C118.636,107.779,119.709,107.779,119.962,108.538z"/>
-              <path style="fill:#F5F5F5;" d="M119.962,139.192l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.026-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C118.636,138.434,119.709,138.434,119.962,139.192z"/>
-              <path style="fill:#F5F5F5;" d="M119.962,169.846l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.026-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C118.636,169.088,119.709,169.088,119.962,169.846z"/>
-              <path style="fill:#F5F5F5;" d="M119.962,200.501l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.026-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C118.636,199.742,119.709,199.742,119.962,200.501z"/>
-              <path style="fill:#F5F5F5;" d="M119.962,231.155l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.026-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C118.636,230.395,119.709,230.395,119.962,231.155z"/>
-              <path style="fill:#F5F5F5;" d="M143.755,123.567l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C142.43,122.809,143.502,122.809,143.755,123.567z"/>
-              <path style="fill:#F5F5F5;" d="M143.755,154.222l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.165-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C142.43,153.463,143.502,153.463,143.755,154.222z"/>
-              <path style="fill:#F5F5F5;" d="M143.755,184.876l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C142.43,184.117,143.502,184.117,143.755,184.876z"/>
-              <path style="fill:#F5F5F5;" d="M143.755,215.53l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C142.43,214.772,143.502,214.772,143.755,215.53z"/>
-              <path style="fill:#F5F5F5;" d="M167.549,108.538l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C166.222,107.779,167.296,107.779,167.549,108.538z"/>
-              <path style="fill:#F5F5F5;" d="M167.549,139.192l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C166.222,138.434,167.296,138.434,167.549,139.192z"/>
-              <path style="fill:#F5F5F5;" d="M167.549,169.846l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C166.222,169.088,167.296,169.088,167.549,169.846z"/>
-              <path style="fill:#F5F5F5;" d="M167.549,200.501l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C166.222,199.742,167.296,199.742,167.549,200.501z"/>
-              <path style="fill:#F5F5F5;" d="M167.549,231.155l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C166.222,230.395,167.296,230.395,167.549,231.155z"/>
-              <path style="fill:#F5F5F5;" d="M191.342,123.567l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C190.016,122.809,191.09,122.809,191.342,123.567z"/>
-              <path style="fill:#F5F5F5;" d="M191.342,154.222l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.165-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C190.016,153.463,191.09,153.463,191.342,154.222z"/>
-              <path style="fill:#F5F5F5;" d="M191.342,184.876l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C190.016,184.117,191.09,184.117,191.342,184.876z"/>
-              <path style="fill:#F5F5F5;" d="M191.342,215.53l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67l1.864,5.889
-              c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889l-4.969-3.67
-              c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C190.016,214.772,191.09,214.772,191.342,215.53z"/>
-              <path style="fill:#F5F5F5;" d="M215.136,108.538l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C213.81,107.779,214.882,107.779,215.136,108.538z"/>
-              <path style="fill:#F5F5F5;" d="M215.136,139.192l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C213.81,138.434,214.882,138.434,215.136,139.192z"/>
-              <path style="fill:#F5F5F5;" d="M215.136,169.846l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C213.81,169.088,214.882,169.088,215.136,169.846z"/>
-              <path style="fill:#F5F5F5;" d="M215.136,200.501l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C213.81,199.742,214.882,199.742,215.136,200.501z"/>
-              <path style="fill:#F5F5F5;" d="M215.136,231.155l1.954,5.86l6.177,0.047c0.8,0.007,1.131,1.027,0.488,1.502l-4.969,3.67
-              l1.864,5.889c0.242,0.762-0.627,1.394-1.278,0.928l-5.025-3.592l-5.025,3.592c-0.651,0.465-1.518-0.166-1.278-0.928l1.864-5.889
-              l-4.969-3.67c-0.643-0.476-0.312-1.495,0.488-1.502l6.177-0.047l1.954-5.86C213.81,230.395,214.882,230.395,215.136,231.155z"/>
-            </g></svg>
-            <small class="ml-1">English</small>
-          </a>
-        </div>
-      </div>
-       <!--  </div>
-       </div> -->
-     </div>
-   </div>
- </div><!------->
- <div class="footer-bottom py-2 py-md-3">
-  <div class="container">
-    <div class="copyright font-medium ">Claimy.dk - <span class="address">Address</span> - <span>Cvr. no</span> - <span><a href="#">e-mail</a></span> - @ Copyright</div>
-  </div>
-</div>
-</footer>
-</div>
-<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/popper.min.js" ></script>
-<script src="assets/js/bootstrap.min.js" ></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/custom.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/popper.min.js" ></script>
+<script src="../../assets/js/bootstrap.min.js" ></script>
+<script src="../../assets/js/owl.carousel.js"></script>
+<script src="../../assets/js/custom.js"></script>
 
 </body>
 </html>

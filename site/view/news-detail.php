@@ -9,12 +9,12 @@
    <meta name="author" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
+   <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
    <!-- <link href="assets/css/animate.css" type="text/css" rel="stylesheet" /> -->
-   <link href="assets/css/owl.theme.css" rel="stylesheet" />
-   <link href="assets/css/owl.carousel.css" rel="stylesheet" />
-   <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-   <link href="assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/css/owl.theme.css" rel="stylesheet" />
+   <link href="../../assets/css/owl.carousel.css" rel="stylesheet" />
+   <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+   <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
  </head>
  <body class="">
   <div class="main position-relative">
@@ -34,7 +34,7 @@
          </a>
          <a href="#" class="btn btn-primary btn-login  d-block d-lg-none ml-auto mr-3">Login</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-           <img src="assets/fonts/icons/menu.svg" width="20">
+           <img src="../../assets/fonts/icons/menu.svg" width="20">
          </button>
 
          <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -62,7 +62,7 @@
               </div>
             </li> -->
           </ul>
-            <a href="signin.php" class="btn btn-primary btn-login d-none d-lg-block">Login</a>
+            <a href="../../site/controllers/signin-controller.php" class="btn btn-primary btn-login d-none d-lg-block">Login</a>
         </div>
       </nav>
     </div>
@@ -79,7 +79,7 @@
         <!---media card start--->
         <div class="card border-0 media-card bg-white">
           <div class="media">
-            <img src="assets/images/card-img.png" class="mr-3 media-img" alt="news">
+            <img src="../../assets/images/card-img.png" class="mr-3 media-img" alt="news">
             <div class="media-body">
                <h5 class="mt-0 mb-2">Media heading</h5>
               <small class="text-secondary">
@@ -137,7 +137,7 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
    <div class="container">
     <div class="row">
       <div class="col-md-4">
-       <img src="assets/images/logo.png" class="footer-logo d-block" alt="Claimy" title="Claimy" height="20">
+       <img src="../../assets/images/logo.png" class="footer-logo d-block" alt="Claimy" title="Claimy" height="20">
 
        <a href="#" class="btn btn-primary my-4">Start your claim</a>
        <ul class="list-unstyled d-flex justify-content-center justify-content-md-start footer-social-links">
@@ -379,11 +379,11 @@ Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante so
 </div>
 </footer>
 </div>
-<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/popper.min.js" ></script>
-<script src="assets/js/bootstrap.min.js" ></script>
-<script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/custom.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/popper.min.js" ></script>
+<script src="../../assets/js/bootstrap.min.js" ></script>
+<script src="../../assets/js/owl.carousel.js"></script>
+<script src="../../assets/js/custom.js"></script>
 
 </body>
 </html>

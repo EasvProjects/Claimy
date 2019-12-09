@@ -8,10 +8,10 @@
  <meta name="keywords" content="">
  <meta name="author" content="">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link href="assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
- <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
- <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
- <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+ <link href="../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+ <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" />
+ <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon.png">
 </head>
 <body>
 
@@ -27,8 +27,8 @@
                     <div class="form-group pl-0 pl-lg-5">
                       <h4 class="mb-2 Welcome-text">Welcome to
                       </h4>
-                      <a href="index.php" class="">
-                        <img src="assets/images/logo.png" class="footer-logo d-block my-3" alt="Claimy" title="Claimy" height="22">
+                      <a href="../../site/controllers/index-controller.php" class="">
+                        <img src="../../assets/images/logo.png" class="footer-logo d-block my-3" alt="Claimy" title="Claimy" height="22">
                       </a>
 
                       <p><small>-The preferred claim company</small><p/>
@@ -59,7 +59,7 @@
                     <p class="mb-0"><a href="#" class="text-theme a-link form-group">Forgot Password?</a></p>  
                   </div> 
                   <div class="col-12 text-lg-center">
-                    <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="window.location.href = 'myaccount.html';">Log In</button>
+                    <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="window.location.href = '../../site/controllers/myaccount-controller.php';">Log In</button>
                   </div>
                   <div class="divider text-center">
                     <span class="or bg-white rounded-circle shadow-sm d-inline">OR</span>
@@ -108,7 +108,7 @@
           </div>
 
           <div class="w-100 text-center">
-            <p class=" text-muted mb-0"><small>New at claimy?</small><a href="signup.php" class="btn-link ml-2">Sign Up</a></p>
+            <p class=" text-muted mb-0"><small>New at claimy?</small><a href="../../site/controllers/signup-controller.php" class="btn-link ml-2">Sign Up</a></p>
 
           </div>
         </div>
@@ -127,8 +127,8 @@
 </body>
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
 <script>
 
 </script>
