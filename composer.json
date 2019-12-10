@@ -1,6 +1,8 @@
 {
     "require": {
-        "justiversen/sheetmapper": "dev-master"
+        "justiversen/sheetmapper": "dev-master",
+      "ext-curl": "*",
+        "ext-json": "*"
     },
     "repositories": [
         {
