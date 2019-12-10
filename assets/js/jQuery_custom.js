@@ -10,7 +10,7 @@ function myAjax() {
         datatype: 'json',
         success: function (data) {
             /*if(data != null && data == "true"){ //redirect...
-                window.location.href = "/controllers/dashboard-controller.php";
+                window.location.href = "/controllers/index-controller.php";
             } else { //report failure...
                 $("#idspancheckuser").append(data);
                 alert(data);

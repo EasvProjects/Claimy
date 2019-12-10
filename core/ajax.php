@@ -18,7 +18,7 @@ if($_POST['action']=='call_this') {
     //$result = mysqli_query($sql);
     if ($email === $temp_email) {
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($security->openSSLEncrypt($temp_password)))) {
-            echo 'dashboard-controller.php';
+            echo 'index-controller.php';
         }
         else{
             echo 'myaccount-controller.php';
