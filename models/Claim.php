@@ -19,7 +19,6 @@ class Claim
     protected $carModel;
     protected $claimComment;
 
-
     public function __construct($claimID, $claimTimeDate, $userID, $countryID, $parkingCompany, $reasonID,
                                 $ticketNo, $ticketTimeDate, $ticketDueDate, $ticketFee, $ticketStreetName, $zipcode,
                                 $licensePlate, $carBrand, $carModel, $claimComment)
