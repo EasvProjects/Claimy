@@ -60,7 +60,7 @@
                   <!-- <p class="mb-0"><a href="#" class="text-theme a-link form-group">Forgot Password?</a></p>   -->
               </div> 
               <div class="col-12 text-lg-center">
-                <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0">Log In</button>
+                  <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="window.location.href = '../../site/controllers/index-controller.php';">Log In</button>
               </div>
              
             </div>

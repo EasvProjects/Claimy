@@ -3,7 +3,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require 'site/view/index.php';
+require 'site/view/under-maintenance.php';
+//require 'site/view/under-maintenance.php';
 //require 'site/controllers/';
 
 
