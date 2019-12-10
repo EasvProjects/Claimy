@@ -49,8 +49,6 @@ class security
      */
     function isPasswordsAMatch($inputtedPassword, $savedPassword)
     {
-        echo $inputtedPassword;
-
         if ($inputtedPassword === $savedPassword) {
             return true;
         }
@@ -109,8 +107,6 @@ class security
 
     function isPasswordsAMatchOpenSSL($inputtedPassword, $savedPassword)
     {
-        echo $inputtedPassword;
-
         if ($inputtedPassword === $savedPassword) {
             return true;
         }
