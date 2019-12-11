@@ -45,11 +45,11 @@
                </div>
                 <div class="form-group col-12 username">
               
-                 <input type="text" class="form-control w-100" id="" placeholder="Enter E-mail Address">
+                 <input type="text" class="form-control w-100" id="email-field" placeholder="Enter E-mail Address">
                </div>
                <div class="form-group col-12 password">
                  
-                 <input type="Password" class="form-control" id="" placeholder="Enter your password">
+                 <input type="Password" class="form-control" id="password-field" placeholder="Enter your password">
                </div>
                <div class="col-12 d-md-flex justify-content-between">
                 <div class="custom-control custom-checkbox mr-sm-2 form-group">
@@ -60,7 +60,7 @@
                   <!-- <p class="mb-0"><a href="#" class="text-theme a-link form-group">Forgot Password?</a></p>   -->
               </div> 
               <div class="col-12 text-lg-center">
-                  <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="window.location.href = '../../site/controllers/index-controller.php';">Log In</button>
+                  <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="empLoginAjax()">Log In</button>
               </div>
              
             </div>
@@ -81,6 +81,7 @@
 
   <script src="../../assets/js/jquery-3.3.1.min.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jQuery_custom.js"></script>
    <script>
 
    </script>
