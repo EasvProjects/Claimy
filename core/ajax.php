@@ -84,6 +84,89 @@ if($_POST['action']=='empLogin') {
     }
 }
 
+
+if($_POST['action']=='clientSignUp') {
+
+    $name = ucfirst($_POST['name']);
+    $country = strtolower($_POST['country']);
+    $address = strtolower($_POST['address']);
+    $phone = trim(strtolower($_POST['phone']));
+    $email = strtolower($_POST['email']);
+    $firstPassword = $_POST['firstPassword'];
+    $secondPassword = $_POST['secondPassword'];
+
+    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/?emailAddress='.$email;
+    $apiData = getRequest($apiCall);
+
+    mapUserData($apiData, $user);
+
+    if($firstPassword === $secondPassword){
+
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+            if($email === $user->getEmail()){
+
+                $data = array(
+                    'fld_TypeID' => 3,
+                    'fld_Title' => NULL,
+                    'fld_Fullname' => 'Kim Langholz',
+                    'fld_Email' => 'kontakt@kimlangholz.dk',
+                    'fld_AuthKey' => '',
+                    'fld_PasswordHash' => $security->openSSLEncrypt('123456'),
+                    'fld_SignupTime' => (string)date("Y-m-d"),
+                    'fld_LastAction' => (string)date("Y-m-d"),
+                    'fld_CustomerAddress' => 'Stenderup 17, 6400 Sønderborg',
+                    'fld_CustomerCountry' => 'Denmark'
+                    //'tbl_ClaimHistory' => [],
+                    //'tbl_Claims' => [],
+                    //'tbl_LoginType' => null
+                );
+
+                $payload = json_encode($data);
+
+                // Prepare new cURL resource
+                $ch = curl_init('https://claimywebservies.azurewebsites.net/api/Users/');
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+
+                // Set HTTP Header for POST request
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                        'Content-Type: application/json',
+                        'Content-Length: ' . strlen($payload))
+                );
+
+                // Submit the POST request
+                $result = curl_exec($ch);
+
+                // Close cURL session handle
+                curl_close($ch);
+
+                echo 'signin-controller.php';
+
+            } else {
+
+                echo 'There\'s no known user with this email in our system. Please sign-up first.';
+
+            }
+
+        } else {
+
+            echo 'The entered email is not valid';
+
+        }
+
+    } else {
+
+        echo 'password does not match';
+
+    }
+
+
+
+}
+
 function mapUserData($apiData, $user){
     if(!$apiData == null){
         foreach ($apiData as $key => $value) {

@@ -44,33 +44,33 @@
                   <h1 class="form-title text-center mb-lg-3">Sign Up</h1>
                </div>
                 <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" placeholder="Fullname">
+                 <input type="text" class="form-control w-100" id="name-field" placeholder="Fullname">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" placeholder="Country">
+                 <input type="text" class="form-control w-100" id="country-field" placeholder="Country">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" placeholder="Address">
+                 <input type="text" class="form-control w-100" id="address-field" placeholder="Address">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" placeholder="Phone no.">
+                 <input type="text" class="form-control w-100" id="phone-field" placeholder="Phone no.">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" placeholder="E-mail">
+                 <input type="text" class="form-control w-100" id="email-field" placeholder="E-mail">
                </div>
                <div class="form-group col-12 ">
-                 <input type="Password" class="form-control" placeholder="Password">
+                 <input type="Password" class="form-control" id="1st-password-field" placeholder="Password">
                </div>
                <div class="form-group col-12 ">
-                 <input type="Password" class="form-control" placeholder="Confirm password">
+                 <input type="Password" class="form-control" id="2nd-password-field" placeholder="Confirm password">
                </div>
               
               <div class="form-group col-12 text-lg-center">
-                <button type="submit" class="btn btn-primary btn-grd w-100 border-0" onclick="window.location.href = '../../site/controllers/myaccount-controller.php';">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-grd w-100 border-0" onclick="clientSignUp()">Sign Up</button>
 
               </div>
 <div class="w-100 text-center">
-                        <p class=" text-muted mb-0"><small>Already having an account with claimy?</small><a href="../../site/controllers/signin-controller.php" class="btn-link ml-2">Login</a></p>
+                        <p class=" text-muted mb-0"><small>Already having an account with Claimy?</small><a href="../../site/controllers/signin-controller.php" class="btn-link ml-2">Login</a></p>
                      
                    </div>
                 <div class="divider text-center">
@@ -136,6 +136,7 @@
 
   <script src="../../assets/js/jquery-3.3.1.min.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jQuery_custom.js"></script>
    <script>
 
    </script>
