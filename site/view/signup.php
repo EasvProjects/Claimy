@@ -44,25 +44,25 @@
                   <h1 class="form-title text-center mb-lg-3">Sign Up</h1>
                </div>
                 <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" id="name-field" placeholder="Fullname">
+                 <input type="text" class="form-control w-100" required id="name-field" placeholder="Type in your full name">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" id="country-field" placeholder="Country">
+                 <input type="text" class="form-control w-100" required id="country-field" placeholder="Country">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" id="address-field" placeholder="Address">
+                 <input type="text" class="form-control w-100" required id="address-field" placeholder="Address">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" id="phone-field" placeholder="Phone no.">
+                 <input type="text" class="form-control w-100" required id="phone-field" placeholder="Phone no.">
                </div>
                <div class="form-group col-12 ">
-                 <input type="text" class="form-control w-100" id="email-field" placeholder="E-mail">
+                 <input type="text" class="form-control w-100" required id="email-field" placeholder="E-mail">
                </div>
                <div class="form-group col-12 ">
-                 <input type="Password" class="form-control" id="1st-password-field" placeholder="Password">
+                 <input type="Password" class="form-control" id="1st-password-field" required minlength="6" placeholder="Password">
                </div>
                <div class="form-group col-12 ">
-                 <input type="Password" class="form-control" id="2nd-password-field" placeholder="Confirm password">
+                 <input type="Password" class="form-control" id="2nd-password-field" required minlength="6" placeholder="Confirm password">
                </div>
               
               <div class="form-group col-12 text-lg-center">

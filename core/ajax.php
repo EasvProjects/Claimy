@@ -17,12 +17,10 @@ if($_POST['action']=='clientLogin') {
 
     mapUserData($apiData, $user);
 
-    // TODO Remove the $security->openSSLEncrypt() when you're able to create your own user in DB.
-    // Password should then be stored encrypted and therefor not be encrypted here.
     if ($email === $user->getEmail()) {
 
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt(
-            $security->openSSLEncrypt($user->getPassword())))) {
+            $user->getPassword()))) {
 
             if($user->getUserType() === 'Client'){
                 echo 'myaccount-controller.php';
@@ -56,11 +54,9 @@ if($_POST['action']=='empLogin') {
 
     mapUserData($apiData, $user);
 
-    // TODO Remove the $security->openSSLEncrypt() when you're able to create your own user in DB.
-    // Password should then be stored encrypted and therefor not be encrypted here.
     if ($email === $user->getEmail()) {
 
-        if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($security->openSSLEncrypt($user->getPassword())))) {
+        if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
 
             if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
                 echo '../../dashboard/controllers/index-controller.php';
@@ -104,22 +100,19 @@ if($_POST['action']=='clientSignUp') {
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-            if($email === $user->getEmail()){
+            if($email !== $user->getEmail()){
 
                 $data = array(
                     'fld_TypeID' => 3,
                     'fld_Title' => NULL,
-                    'fld_Fullname' => 'Kim Langholz',
-                    'fld_Email' => 'kontakt@kimlangholz.dk',
+                    'fld_Fullname' => $name,
+                    'fld_Email' => $email,
                     'fld_AuthKey' => '',
-                    'fld_PasswordHash' => $security->openSSLEncrypt('123456'),
+                    'fld_PasswordHash' => $security->openSSLEncrypt($firstPassword),
                     'fld_SignupTime' => (string)date("Y-m-d"),
                     'fld_LastAction' => (string)date("Y-m-d"),
-                    'fld_CustomerAddress' => 'Stenderup 17, 6400 Sønderborg',
-                    'fld_CustomerCountry' => 'Denmark'
-                    //'tbl_ClaimHistory' => [],
-                    //'tbl_Claims' => [],
-                    //'tbl_LoginType' => null
+                    'fld_CustomerAddress' => $address,
+                    'fld_CustomerCountry' => $country
                 );
 
                 $payload = json_encode($data);
@@ -147,7 +140,7 @@ if($_POST['action']=='clientSignUp') {
 
             } else {
 
-                echo 'There\'s no known user with this email in our system. Please sign-up first.';
+                echo 'There\'s already a user associated with this email';
 
             }
 
