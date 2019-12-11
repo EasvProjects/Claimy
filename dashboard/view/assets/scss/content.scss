@@ -1,0 +1,567 @@
+
+/************header************/
+@media (min-width: 1200px){
+.container {
+    max-width: 1180px;
+}
+}
+/* .container{
+    @include md-min{
+    max-width: calc(100% - 200px);
+    padding:0px;
+    }
+    @include xl-min{
+    max-width: calc(100% - 200px);
+    padding:0px;
+    }
+      
+  } */
+.main-section{
+    min-height:calc(100vh - 73px - 52px);
+}
+.section-padding{
+    padding:1.5rem 0;
+    @include lg-min{
+     padding:3rem 0;
+    }
+}
+.card-body{
+    //padding:1rem;
+    @include lg-min{
+   // padding:1.8rem;
+
+    }
+}
+
+.col-sidebar{
+  flex:100%;
+  @include lg-min{
+-ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+   // max-width: 100%;
+  }
+}
+.col.col-content {
+max-width: 100%;
+ @include lg-min{
+    flex: 3.2;
+    max-width: 80%;
+    padding-left: 1rem;
+    border-left: 1px dashed #e8e8e8;
+    }
+    @include xl-min{
+      flex: 4;
+    padding-left: 2rem;
+    border-left: 1px dashed #e8e8e8;
+     }
+}
+.dropdown-toggle::after{
+ border:0px;
+ background-image:url(../images/icons/down.svg);
+ height:12px;
+ width:12px;
+     background-size: contain;
+         margin-left: 1rem;
+ position: absolute;
+    right: 0;
+    top: 12px;
+}
+#sidenav{
+  &:after{
+  right:15px;
+  }
+}
+.dropdown-menu{
+      font-size: inherit;
+      .dropdown-item{
+          padding: .5rem 1rem;
+
+  &.active,
+  &:active{
+   @include grdimg();
+  }
+     
+      }
+}
+ .btn{
+     font-weight:500;
+     font-size: 14px;
+     height: 35px;
+     padding: .45rem 1rem;
+     &:focus, &:active{
+     box-shadow:none !important;
+     }
+       @include xs-max{
+       font-size:14px;
+     padding:.375rem 1rem;
+       }  
+     &.btn-primary{
+       background-color:$white-color;
+       color:$primary-color;
+       border-color:$white-color;
+    }
+    &.btn-alt{
+       background-color:$white-color;
+       color:$primary-color;
+       border-color:$primary-color;
+        @include xs-max{
+        }
+    }
+     &.btn-lg{
+         padding:1rem 2rem;
+         font-size:20px;
+       @include xs-max{
+      font-size:16px;
+     padding:.75rem 1.5rem;
+       }  
+    }
+    &.btn-grd{
+  @include grdimg();
+   color:$white-color;
+   border:0;
+  }
+
+}
+
+
+
+/**********login**********/
+
+.divider{
+      height: 1px;
+    width: 100%;
+    position: relative;
+    background: #efefef;
+    margin:2rem 0 ;
+
+    .or{
+        position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    top: -17px;
+    height: 40px;
+    font-size: 14px;
+    padding: 5px;
+    line-height: 26px;
+    border: 1px solid #efefef;
+    }
+}
+.form-section {
+    min-height:100vh;
+    position:relative;
+    background: #dde8ef;
+    overflow-x:hidden;
+    &:before{
+    content:"";
+    clip-path: polygon(0 109%, 100% -22%, 100% 100%, 0% 100%);
+    background: #f0f1f9;
+    position:absolute;
+    top:0;right:0;bottom:0;left:0;
+    }
+}
+.login-box-left{
+    padding-top:2rem;
+    padding-bottom: 1rem;
+}
+.form-title {
+    font-size:1.4rem;
+    color: $primary-color;
+
+    @include lg-min{
+    font-size:1.8rem;
+    }
+}
+.form-group {
+     margin-bottom: 0.75rem;
+    @include lg-min{
+    margin-bottom: 1rem;
+    }
+}
+.form-control{
+&:focus{
+    @include shadow(none);
+}
+}
+ @include placeholder{
+ font-size:14px;
+ opacity:0.8;
+ }
+
+
+.login-form {
+    padding: 2rem 1rem;
+    @include lg-min{
+    padding:2rem;
+    }
+    .form-group{
+    position: relative;
+
+    .form-control {
+    background-color: rgb(255, 255, 255);
+    height: 42px;
+    padding: .375rem 1rem;
+
+}
+}
+    .username {
+    &:before {
+    content: "";
+    background-image: url('../images/username.svg');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    background-position: center;
+    top: 11px; opacity:0.5;
+
+  }
+
+    }
+    .password{
+    &:before{
+    content: "";
+    background-image: url('../images/password.svg');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    background-position: center;
+    top: 11px;opacity:0.5;
+    background-image: url('../images/password.svg');
+    }
+   
+    }
+    .email{
+    content: "";
+    background-image: url('../images/email.svg');
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    background-position: center;
+    top: 11px;opacity:0.5;
+    }
+}
+.btn-icon {
+    svg {
+    height: 30px;
+    margin-bottom:0.5rem;
+}
+span{
+   font-size:14px;
+}
+}
+/*************my account************/
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative; 
+ 
+ &:hover .btn{
+  
+ } 
+}
+
+.file-wrapper input {
+  cursor: pointer;
+  font-size: 100px;
+  height: 100%;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0.01;
+  opacity: 0.01;
+  position: absolute;
+  right: 0;
+  top: 0; 
+  z-index:  9;
+}
+.col-form-label{
+    font-weight: 500;
+        font-size: 14px;
+}
+.navbar-inner{
+    .nav-link {
+     padding: .5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    color:$secondary-color;
+
+    &.active{
+    @include grdimg();
+    //color:$primary-color;
+   // background-color: transparent;
+    }
+    }
+}
+.claim-card{
+    @include flex();
+    margin-bottom:1.5rem;
+    @include md-max{
+    margin-bottom:1rem;
+    justify-content: space-between!important;
+    flex-direction: row;
+    .claim-box{
+       flex-direction: column;
+    }
+    }
+}
+.claim-box{
+    padding:1rem;
+    @include lg-min{
+    padding:1.5rem;
+    }
+
+}
+.claim-table{
+li {
+    margin-bottom: 1rem;
+    @include flex();
+    .case-header {
+    display: inline-block;
+    font-weight:500;
+
+    margin-right:1rem;
+    @include lg-min{
+    min-width: 120px;
+    }
+    .case-value{
+    opacity:0.8;
+    }
+}
+
+}
+}
+.claim-status {
+@include md-max{
+ padding: 1rem;
+     border-left: 1px solid #efefef;
+    padding-left: 0px;
+}
+ul{
+    @include md-max{
+    flex-direction: column;
+    } 
+}
+    li{
+    }
+  
+    .nav-link {
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: 50px;
+    padding: 8px 0;
+    color:$text-color;
+    border-radius:0rem;
+    font-weight:600;
+    opacity:0.6;
+    @include md-max{
+        margin-bottom: 0px;
+    margin-right: 0;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 12px;
+  
+}
+     &:before{
+      color:$text-color;
+      content: '\2022';
+      display: inline-block;
+      font-size: 25px;
+      left: -20px;
+      position: absolute;
+      top: 1px;opacity:0.6;
+    }
+
+    &.active {
+    opacity:1;
+    color:$primary-color;
+    &:before{
+    color:$primary-color;opacity:1;
+    }
+}
+
+}
+}
+
+.table-export{
+  svg{
+  fill:$primary-color;
+  }
+}
+
+
+/***************date and timepicker*************/
+.gj-picker-bootstrap [role="header"] {
+    color:rgba($white-color, 0.54);
+    background:$primary-color;
+}
+
+.gj-picker .selected {
+    color: $white-color;
+}
+
+
+
+.gj-picker-bootstrap {
+.arrow-begin {
+    background-color: $primary-color;
+}
+.arrow-end {
+    border: 16px solid $primary-color;
+}
+}
+
+.gj-datepicker, .gj-timepicker{
+    .btn {
+    padding: 0px;
+}
+}
+
+.uploaderwrapper .uploaderbox .uploaderbox-close{
+     background-color: $primary-color;
+}
+
+
+.toggle-btn{
+  width: 80px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  background : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T42TaxHCQAyENw5wAhLACVUAUkABOCkSwEkdhNmbpHNckzv689L98toIAKjqGcAFwElEFr5ln6ruAMwA7iLyFBM/TPDuQSrxwf6fCKBoX2UMIYGYkg8BLOnVg2RiAEexGaQQq4w9e9klcxGLLAUwgDAcihlYAR1IvZA1sz/+AAaQjXhTQQVoe2Yo3E7UQiT2ijeQdojRtClOfVKvMVyVpU594kZK9zzySWTlcNqZY9tjCsUds00+A57z1e35xzlzJjee8xf0HYp+cOZQUQAAAABJRU5ErkJggg==') no-repeat 50px center #e74c3c;
+  cursor: pointer;
+  -webkit-transition: background-color .40s ease-in-out;
+  -moz-transition: background-color .40s ease-in-out;
+  -o-transition: background-color .40s ease-in-out;
+  transition: background-color .40s ease-in-out;
+  cursor:pointer;
+  &.active{
+    background : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T6WT0RWDMAhFeZs4ipu0mawZpaO4yevBc6hUIWLNd+4NeQDk5sE/PMkZwFvZywKSTxF5iUgH0C4JHGyF97IggFVSqyCFga0CvQSg70Mdwd8QSSr4sGBMcgavAgdvwQCtApvA2uKr1x7Pu++06ItrF5LXPB/CP4M0kKTwYRIDyRAOR9lJTuF0F0hOAJbKopVHOZN9ACS0UgowIx8ZAAAAAElFTkSuQmCC') no-repeat 10px center #2ecc71;
+    .round-btn{
+      left: 45px;
+    }
+  }
+  .round-btn{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -15px;
+    -webkit-transition: all .30s ease-in-out;
+  -moz-transition: all .30s ease-in-out;
+  -o-transition: all .30s ease-in-out;
+  transition: all .30s ease-in-out;
+  }
+  .cb-value{
+    position: absolute;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    cursor:pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+
+/**********about***************/
+.avatar-name {
+    font-size: 1rem;
+}
+.team-card {
+    font-size: 14px;
+    padding:1rem;
+}
+.add-team-card {
+    font-size: 14px;
+    height:100%;
+    
+}
+ul.team-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+     width:100%;
+   
+    @include xl-min{
+     width:33%;
+     padding:10px;
+    }
+     @include lg-max{
+     width:50%;
+     padding:15px;
+    }
+     @include xs-max{
+     width:100%;
+     padding:15px 15px 0;
+    }
+
+
+    }
+}
+.table {
+  @include sm-max{
+    display:block;
+        width: 100%;
+    overflow-x: auto;
+  }
+  .form-control{
+      height: 35px;
+    padding: .375rem 0.5rem;
+    font-size: 13px;
+  }
+  th,
+  td {
+ // padding: .3rem;
+  }
+}
+
+.action-btn {
+display:inline-block;
+  svg {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+        fill: #c10600;
+}
+}
+
+.table-sm td, .table-sm th {
+    padding: .5rem;
+    font-size: 14px;
+}
+.table-xs td, .table-xs th{
+  padding: .3rem;
+    font-size: 14px;
+}
+.action svg{
+  height:16px;
+  width:16px;
+}
+.checkboxes-field {
+  .custom-checkbox{
+     width:50%;
+    margin-bottom: 0.75rem;
+    @include lg-min{
+     width: 25%;
+    }
+  }
+}

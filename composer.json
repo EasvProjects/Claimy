@@ -1,0 +1,16 @@
+{
+    "require": {
+        "justiversen/sheetmapper": "dev-master",
+      "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./package",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}

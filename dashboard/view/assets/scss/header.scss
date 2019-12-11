@@ -1,0 +1,44 @@
+ header{
+     border-bottom:1px solid rgba(255, 255, 255, 0.12);
+     position:relative;
+}
+
+
+ .navbar-expand-lg{
+     padding:1rem;
+     .navbar-nav {
+         .nav-link {
+             color:$white-color;
+             padding-right:1.25rem;
+             padding-left:1.25rem;
+             opacity:0.8;
+             @include xs-max{
+             font-size:14px;
+             }
+
+             &.active{
+            opacity:1;
+             }
+        }
+    }
+    @include sm-max{
+    padding: 0.5rem 0;
+        svg{
+        @include transform(scale(0.8));
+        }
+       
+    }
+      
+}
+
+#navbarNavDropdown{
+  @include md-max{
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background: $primary-color;
+    padding: 1rem 0rem;
+  }
+}
