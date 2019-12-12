@@ -1,10 +1,11 @@
 <?php
 
-function getUsers() {
+function getRequest($url) {
+
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://claimywebservies.azurewebsites.net/api/Users/",
+        CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,
@@ -23,7 +24,10 @@ function getUsers() {
 
     $data = json_decode($response, true);
 
-// do something with the data
+    if($data != null){
+        return $data;
+    } else {
+        return $err;
+    }
 
-    print_r($data);
 }
