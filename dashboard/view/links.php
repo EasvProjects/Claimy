@@ -21,24 +21,24 @@
               <a class="nav-link btn  dropdown-toggle bg-grd text-white text-left " href="#" id="sidenav" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Settings
               </a>
-              <div class="dropdown-menu navbar-inner shadow border-0 w-100 py-0" aria-labelledby="sidenav">
-                <a class="dropdown-item"  href="company-details.php" >Company details</a>
-                <a class="dropdown-item active" href="links.php" >Links</a>
-                <a class="dropdown-item"  href="third-party.php" >Third Party</a>
-                <a class="dropdown-item"  href="cookies.php" >Cookies</a>
-                <a class="dropdown-item"  href="terms-of-service.php" >Terms of service</a>
-                <a class="dropdown-item"  href="gdrp.php" >GDPR</a>
-                <a class="dropdown-item"  href="teams.php" >About us</a>
-                <a class="dropdown-item ml-2"  href="teams.php" >- Team</a>
-                <a class="dropdown-item ml-2"  href="about.php" >- About us</a>
-                <a class="dropdown-item"  href="news.php" >News</a>
-                <a class="dropdown-item"  href="employees-list.php" >Employees</a>
-                <a class="dropdown-item"  href="system-log.php" >System log</a>
-                <a class="dropdown-item"  href="supported-countries-list.php" >Global</a>
-                <a class="dropdown-item ml-2"  href="supported-countries-list.php " >- Supported Countries</a>
-                <a class="dropdown-item ml-2"  href="languages-list.php " >- Website Languages</a>
-                <a class="dropdown-item"  href="offline-mode.php" >Offline mode </a>
-               
+                <div class="dropdown-menu navbar-inner shadow border-0 w-100 py-0" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item active"  href="../../dashboard/controllers/company-details.php" >Company details</a>
+                    <a class="dropdown-item" href="../../dashboard/controllers/links-controller.php" >Links</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/third-party-controller.php" >Third Party</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/cookies-controller.php" >Cookies</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/terms-of-service-controller.php" >Terms of service</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/gdpr-controller.php" >GDPR</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/about-us-controller.php" >About us</a>
+                    <a class="dropdown-item ml-2"  href="../../dashboard/controllers/team-controller.php" >- Team</a>
+                    <a class="dropdown-item ml-2"  href="../../dashboard/controllers/about-us-controller.php" >- About us</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/news-list-controller.php" >News</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/employees-list-controller.php" >Employees</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/system-log-controller.php" >System log</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/global-controller.php" >Global</a>
+                    <a class="dropdown-item ml-2"  href="../../dashboard/controllers/coutries-controller.php" >- Supported Countries</a>
+                    <a class="dropdown-item ml-2"  href="../../dashboard/controllers/language-controller.php" >- Website Languages</a>
+                    <a class="dropdown-item"  href="../../dashboard/controllers/maintenance-controller.php" >Offline mode </a>
+
               </div>
             </div>
           </div>
@@ -52,27 +52,27 @@
               <li>
                 <a class="nav-link "  href="company-details.php" >Company details</a>
               </li>
-              <li><a class="nav-link active"  href="links.php" >Links</a></li>
-              <li><a class="nav-link"  href="third-party.php" >Third Party</a></li>
-              <li><a class="nav-link"  href="cookies.php" >Cookies</a></li>
-              <li><a class="nav-link"  href="terms-of-service.php" >Terms of service</a></li>
-              <li><a class="nav-link"  href="gdrp.php" >GDPR</a></li>
-              <li><a class="nav-link"  href="about.php" >About us</a>
+              <li><a class="nav-link active"  href="../../dashboard/controllers/links-controller.php" >Links</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/third-party-controller.php" >Third Party</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/cookies-controller.php" >Cookies</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/terms-of-service-controller.php" >Terms of service</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/gdpr-controller.php"" >GDPR</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/about-us-controller.php" >About us</a>
                   <ul class="list-unstyled ">
-                    <li><a class="nav-link "  href="teams.php">- Team</a></li>
-                    <li><a class="nav-link "  href="about.php">- About us</a></li>
+                    <li><a class="nav-link "  href="../../dashboard/controllers/team-controller.php">- Team</a></li>
+                    <li><a class="nav-link "  href="../../dashboard/controllers/about-us-controller.php">- About us</a></li>
                   </ul>
                 </li>
-              <li><a class="nav-link"  href="news.php" >News</a></li>
-              <li><a class="nav-link"  href="employees-list.php" >Employees</a></li>
-              <li><a class="nav-link"  href="system-log.php" >System log</a></li>
-              <li><a class="nav-link"  href="supported-countries-list.php" >Global</a>
+              <li><a class="nav-link"  href="../../dashboard/controllers/news-list-controller.php" >News</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/employees-list-controller.php" >Employees</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/system-log-controller.php" >System log</a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/global-controller.php" >Global</a>
                   <ul class="list-unstyled ">
-                    <li><a class="nav-link"  href="supported-countries-list.php">- Supported Countries</a></li>
-                    <li><a class="nav-link"  href="languages-list.php">- Website Languages</a></li>
+                    <li><a class="nav-link"  href="../../dashboard/controllers/coutries-controller.php">- Supported Countries</a></li>
+                    <li><a class="nav-link"  href="../../dashboard/controllers/language-controller.php">- Website Languages</a></li>
                   </ul>
                 </li>
-              <li><a class="nav-link"  href="offline-mode.php" >Offline mode </a></li>
+              <li><a class="nav-link"  href="../../dashboard/controllers/maintenance-controller.php" >Offline mode </a></li>
             </ul>
            
          </div>
