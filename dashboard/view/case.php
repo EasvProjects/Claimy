@@ -3,6 +3,8 @@
 
     <?php include 'inc/header.php'; ?>
 
+
+
 <section class="main-section section-padding">
   <div class="container">
    <div class="section-header text-center">
@@ -60,6 +62,12 @@
 
        </div>
 
+          <?php include '../../dashboard/controllers/index-controller.php';?>
+
+          <?php
+          foreach ($apiData as $key => $value){
+          ?>
+
        <div class="form-group">
          <a href="../../dashboard/controllers/index-controller.php" class="btn btn-alt">Back</a>
          <a href="#" class="btn btn-grd" data-toggle="modal"   data-target="#email_to_client">Send to client</a>
@@ -70,77 +78,71 @@
         <ul class="list-unstyled claim-table under-process-table">
          <li>
           <span class="case-header">Case id</span>
-          <label class="case-value">1234</label>
+          <label class="case-value"><?php echo $value['fld_ClaimID'] ?></label>
         </li>
          <li>
           <span class="case-header">Date</span>
-          <label class="case-value">10:40 - 19/11/2019</label>
+          <label class="case-value"> <td><?php echo $value['fld_ClaimTimeDate'] ?></td></label>
         </li>
         <li>
           <span class="case-header">Status</span>
-          <label class="case-value">new</label>
+          <label class="case-value"><?php echo $value['fld_Status'] ?></label>
         </li>
         <li>
           <span class="case-header">By</span>
-          <label class="case-value">Wisam Swaidan</label>
+          <label class="case-value"><?php echo $value[''] ?></label>
         </li>
         <li>
           <span class="case-header">Phone no.</span>
-          <label class="case-value">+4561856583</label>
+          <label class="case-value"><?php echo $value['fld_PhoneNo'] ?></label>
         </li>
         <li>
           <span class="case-header">E-mail</span>
-          <label class="case-value">email@email.dk</label>
+          <label class="case-value"><?php echo $value['fld_Email'] ?></label>
         </li>
         <li>
           <span class="case-header">Country</span>
-          <label class="case-value">Denmark</label>
+          <label class="case-value"><?php echo $value['fld_CustomerCountry'] ?></label>
         </li>
         <li>
           <span class="case-header">Parking ticket company</span>
-          <label class="case-value">Q-Park</label>
+          <label class="case-value"><?php echo $value['fld_CompanyName'] ?></label>
         </li>
         <li>
           <span class="case-header">Reason</span>
-          <label class="case-value">"This is the predefined reason"</label>
+          <label class="case-value"><?php echo $value['tbl_ParkingReasons'] ?></label>
         </li>
         <li>
           <span class="case-header">Ticket no.</span>
-          <label class="case-value">1234</label>
+          <label class="case-value"><?php echo $value['fld_TicketNo'] ?></label>
         </li>
         <li>
           <span class="case-header">Ticket date</span>
-          <label class="case-value">12/11/2019</label>
-        </li>
-        <li>
-          <span class="case-header">Ticket time</span>
-          <label class="case-value">14:31</label>
+          <label class="case-value"><?php echo $value['fld_TicketTimeDate'] ?></label>
         </li>
         <li>
           <span class="case-header">Ticket payment due date</span>
-          <label class="case-value">22/11/2019</label>
+          <label class="case-value"><?php echo $value['fld_TicketDueDate'] ?></label>
         </li>
         <li>
           <span class="case-header">Ticket issued on the following address</span>
-          <label class="case-value">Aision 2, 6400 sønderborg</label>
+          <label class="case-value"><?php echo $value['fld_TicketStreetName'] ?></label>
         </li>
         <li>
           <span class="case-header">Car reg no.</span>
-          <label class="case-value">XY12345</label>
+          <label class="case-value"><?php echo $value['fld_CarRegNo'] ?></label>
         </li>
         <li>
           <span class="case-header">Car brand</span>
-          <label class="case-value">Mercedes</label>
+          <label class="case-value"><?php echo $value['fld_CarBrand'] ?></label>
         </li>
         <li>
           <span class="case-header">Car model</span>
-          <label class="case-value">C320</label>
+          <label class="case-value"><?php echo $value['fld_CarModel'] ?></label>
         </li>
         <li>
           <span class="case-header">Your comments</span>
-          <label class="case-value ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut</label>
+          <label class="case-value "><?php echo $value['fld_ClaimComments'] ?></label>
         </li>
         <li class="attachments">
           <span class="case-header">Attachments</span>
@@ -148,6 +150,10 @@
         </li>
 
       </ul>
+           <?php  } ?>
+
+
+
     </div>
   </div>
 </div>
