@@ -9,7 +9,7 @@
                     <h2 class="banner-sub-text font-medium">With <span class="font-bold">Claimy</span> you can send a
                         claim We help you to <br/>
                         get rid of the ticket
-                    <a href="#" class="btn btn-primary btn-lg">Start your claim</a>
+                    <a href="/controllers/contact-controller.php" class="btn btn-primary btn-lg">Start your claim</a>
                 </div>
             </div>
         </div>

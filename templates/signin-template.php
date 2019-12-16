@@ -54,7 +54,7 @@
                                         <span class="or bg-white rounded-circle shadow-sm d-inline">OR</span>
                                     </div>
                                     <div class="d-flex justify-content-center w-100 form-group">
-                                        <a href="#" class="btn btn-icon">
+                                        <a href="<?=$facebook_auth_url?>"  class="btn btn-icon">
                                             <div class="">
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -69,7 +69,7 @@
                                             </div>
                                             <span>Login with Facebook</span>
                                         </a>
-                                        <a href="#" class="btn btn-icon">
+                                        <a href="<?=$auth_url?>" class="btn btn-icon">
                                             <div>
                                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
