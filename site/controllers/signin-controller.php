@@ -38,8 +38,6 @@ if(isset($pay_load)){
 
 }
 
-
-
 $email =$pay_load["email"];
 
 //FaceBook Login
