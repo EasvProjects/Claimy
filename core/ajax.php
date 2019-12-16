@@ -7,12 +7,12 @@ require '../models/User.php';
 $security = new security();
 $user = new User();
 
-if($_POST['action']=='clientLogin') {
+if($_POST['action']==='clientLogin') {
 
     $email = strtolower($_POST['email']);
     $password = $_POST['password'];
 
-    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/?emailAddress='.$email;
+    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
     mapUserData($apiData, $user);
@@ -44,12 +44,12 @@ if($_POST['action']=='clientLogin') {
     }
 }
 
-if($_POST['action']=='empLogin') {
+if($_POST['action']==='empLogin') {
 
     $email = strtolower($_POST['email']);
     $password = $_POST['password'];
 
-    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/?emailAddress='.$email;
+    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
     mapUserData($apiData, $user);
@@ -81,7 +81,7 @@ if($_POST['action']=='empLogin') {
 }
 
 
-if($_POST['action']=='clientSignUp') {
+if($_POST['action']==='clientSignUp') {
 
     $name = ucfirst($_POST['name']);
     $country = strtolower($_POST['country']);
@@ -91,7 +91,7 @@ if($_POST['action']=='clientSignUp') {
     $firstPassword = $_POST['firstPassword'];
     $secondPassword = $_POST['secondPassword'];
 
-    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/?emailAddress='.$email;
+    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
     mapUserData($apiData, $user);
