@@ -18,7 +18,7 @@ function clientLoginAjax() {
 function empLoginAjax() {
     $.ajax({
         type: "POST",
-        url: '../../core/ajax.php',
+        url: '../../site/controllers/maintenance-controller.php',
         data: {
             action: 'empLogin',
             "email": $('#email-field').val(),
@@ -26,7 +26,8 @@ function empLoginAjax() {
         },
         datatype: 'json',
         success: function (data) {
-            window.location.href = data;
+            alert(data);
+            //window.location.href = data;
         }
     });
 }
