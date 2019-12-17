@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 require 'Security.php';
 require '../api/apiRequests.php';
 require '../models/User.php';
