@@ -64,9 +64,10 @@ C/O https://placeholder.com/" alt="your image" width="100" />
                      <select class="form-control" id="country">
                       <!-- <option disabled="">Select country</option>--->
                       <option>Denmark</option>
-                      <option>Denmark</option>
-                      <option>Denmark</option>
-                      <option>Denmark</option>
+                      <option>Germany</option>
+                      <option>Sweden</option>
+                      <option>Norway</option>
+                         <option>Finland</option>
                     </select>
                   </div>
                 </div>
@@ -98,7 +99,7 @@ C/O https://placeholder.com/" alt="your image" width="100" />
                 <input type="text" name="" class="form-control">
               </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group row" id="ticketNo">
              <label class="col-sm-12 col-form-label">Ticket no.</label>
              <div class="col-sm-12">
               <input type="text" name="" class="form-control">
