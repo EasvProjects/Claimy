@@ -15,32 +15,22 @@ if($_POST['action']==='clientLogin') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    $this->mapUserData($apiData, $user);
+    mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
-
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt(
             $user->getPassword()))) {
-
             if($user->getUserType() === 'Client'){
-                echo 'myaccount-controller.php';
+                echo 'success';
+            }else{
+                echo 'errorNotClintAccount';
             }
-
         }
         else{
-
-            if($user->getUserType() === 'Client'){
-                echo 'signin-controller.php';
-            }
-
+            echo 'errorPasswordNotMatch';
         }
-
     } else {
-
-        if($user->getUserType() === 'Client'){
-            echo 'signin-controller.php';
-        }
-
+        echo 'errorUserNotFound';
     }
 }
 
@@ -52,7 +42,7 @@ if($_POST['action']==='empLogin') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    $this->mapUserData($apiData, $user);
+    mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
@@ -65,11 +55,7 @@ if($_POST['action']==='empLogin') {
 
         }
         else{
-
-            //if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
                 echo 'signin-controller.php';
-            //}
-
         }
 
     } else {
@@ -94,7 +80,7 @@ if($_POST['action']==='clientSignUp') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    $this->mapUserData($apiData, $user);
+    mapUserData($apiData, $user);
 
     if($firstPassword === $secondPassword){
 
@@ -115,7 +101,9 @@ if($_POST['action']==='clientSignUp') {
                     'fld_CustomerCountry' => $country
                 );
 
-                $payload = json_encode($data);
+                $url = 'https://claimywebservies.azurewebsites.net/api/Users/';
+
+                /*$payload = json_encode($data);
 
                 // Prepare new cURL resource
                 $ch = curl_init('https://claimywebservies.azurewebsites.net/api/Users/');
@@ -134,7 +122,9 @@ if($_POST['action']==='clientSignUp') {
                 $result = curl_exec($ch);
 
                 // Close cURL session handle
-                curl_close($ch);
+                curl_close($ch);*/
+
+                postRequest($url, $data);
 
                 echo 'signin-controller.php';
 
