@@ -15,7 +15,7 @@ if($_POST['action']==='empLogin') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    mapUserData($apiData, $user);
+    $this->mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
@@ -40,6 +40,39 @@ if($_POST['action']==='empLogin') {
         echo 'signin-controller.php';
         //}
 
+    }
+}
+
+function mapUserData($apiData, $user){
+    if(!$apiData == null){
+        foreach ($apiData as $key => $value) {
+            if($value == null){
+                $value = 'NULL';
+            }
+            if($key === 'fld_UserID'){
+                $user->setUserID($value);
+            }
+            if($key === 'fld_Fullname'){
+                $user->setName($value);
+            }
+            if($key === 'fld_Email'){
+                $user->setEmail($value);
+            }
+            if($key === 'fld_PasswordHash'){
+                $user->setPassword($value);
+            }
+            if($key === 'fld_TypeID'){
+                if($value === 1 ){
+                    $user->setUserType('Admin');
+                }
+                if($value === 2){
+                    $user->setUserType('Employee');
+                }
+                if($value === 3){
+                    $user->setUserType('Client');
+                }
+            }
+        }
     }
 }
 

@@ -15,7 +15,7 @@ if($_POST['action']==='clientLogin') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    mapUserData($apiData, $user);
+    $this->mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
 
@@ -52,7 +52,7 @@ if($_POST['action']==='empLogin') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    mapUserData($apiData, $user);
+    $this->mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
@@ -94,7 +94,7 @@ if($_POST['action']==='clientSignUp') {
     $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
     $apiData = getRequest($apiCall);
 
-    mapUserData($apiData, $user);
+    $this->mapUserData($apiData, $user);
 
     if($firstPassword === $secondPassword){
 
