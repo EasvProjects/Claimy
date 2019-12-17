@@ -5,4 +5,4 @@ ini_set('display_errors', -1);
 
 require 'site/view/under-maintenance.php';
 
-phpinfo();
+//phpinfo();
