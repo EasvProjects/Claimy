@@ -53,3 +53,20 @@ function clientSignUp(){
     });
 }
 
+function sendContactFormEmail() {
+    $.ajax({
+        type: "POST",
+        url: '../../site/controllers/contact-controller.php',
+        data: {
+            action: 'activateContactForm',
+            "name": $('#name-field').val(),
+            "email": $('#email-field').val(),
+            "phone": $('#phone-field').val(),
+            "message": $('#message-field').val()
+        },
+        datatype: 'json',
+        success: function (data) {
+            alert = data;
+        }
+    });
+}
