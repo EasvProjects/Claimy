@@ -26,8 +26,10 @@ function empLoginAjax() {
         },
         datatype: 'json',
         success: function (data) {
-            alert(data);
-            //window.location.href = data;
+            window.location.href = data;
+        },
+        error: function(data){
+            console.log(data);
         }
     });
 }
@@ -49,6 +51,9 @@ function clientSignUp(){
         datatype: 'json',
         success: function (data) {
                  window.location.href = data;
+        },
+        error: function(data){
+            console.log(data);
         }
 
     });
@@ -68,6 +73,9 @@ function sendContactFormEmail() {
         datatype: 'json',
         success: function (data) {
             alert = data;
+        },
+        error: function(data){
+            console.log(data);
         }
     });
 }
