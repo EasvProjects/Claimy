@@ -45,7 +45,7 @@ if($_POST['action']==='clientLogin') {
 }
 
 if($_POST['action']==='empLogin') {
-    console_log( 'Came here' );
+
     $email = strtolower($_POST['email']);
     $password = $_POST['password'];
 
@@ -55,27 +55,27 @@ if($_POST['action']==='empLogin') {
     mapUserData($apiData, $user);
 
     if ($email === $user->getEmail()) {
-        console_log( 'Came here 1' );
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
 
             if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
                 echo 'index-controller.php';
+            }else{
+                echo 'signin-controller.php';
             }
 
         }
         else{
 
-            if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
+            //if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
                 echo 'signin-controller.php';
-            }
+            //}
 
         }
 
     } else {
-        console_log( 'Came here 2' );
-        if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
+        //if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
             echo 'signin-controller.php';
-        }
+        //}
 
     }
 }
@@ -191,11 +191,4 @@ function mapUserData($apiData, $user){
             }
         }
     }
-}
-
-
-function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
 }
