@@ -1,7 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-
 require 'Security.php';
 require '../api/apiRequests.php';
 require '../models/User.php';
@@ -61,7 +59,7 @@ if($_POST['action']==='empLogin') {
         if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
 
             if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
-                echo '../../dashboard/controllers/index-controller.php';
+                echo 'index-controller.php';
             }
 
         }
