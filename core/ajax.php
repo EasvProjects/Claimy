@@ -1,6 +1,6 @@
 <?php
 
-include 'security.php';
+require 'Security.php';
 require '../api/apiRequests.php';
 require '../models/User.php';
 
