@@ -1,29 +1,80 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-require 'templates/index-template.php';
-$input = 'KimLangholz';
-// Store the cipher method
-$ciphering = "AES-128-CTR";
-// Use OpenSSl Encryption method
-$iv_length = openssl_cipher_iv_length($ciphering);
-$options = 0;
-// Non-NULL Initialization Vector for encryption
-$encryption_iv = '1234567891011121';
-// Store the encryption key
-$encryption_key = "GeeksforGeeks";
-// Use openssl_encrypt() function to encrypt the data
-$encryption = openssl_encrypt($input, $ciphering,
-    $encryption_key, $options, $encryption_iv);
-// Display the encrypted string
-echo "Encrypted String: " . $encryption . "\n";
-// Non-NULL Initialization Vector for decryption
-$decryption_iv = '1234567891011121';
-// Store the decryption key
-$decryption_key = "GeeksforGeeks";
-// Use openssl_decrypt() function to decrypt the data
-$decryption = openssl_decrypt($encryption, $ciphering,
-    $decryption_key, $options, $decryption_iv);
-// Display the decrypted string
-echo "Decrypted String: " . $decryption;
+require '../../core/Security.php';
+require '../../api/apiRequests.php';
+require '../../models/User.php';
+
+$security = new security();
+$user = new User();
+
+if($_POST['action']==='empLogin') {
+
+    $email = strtolower($_POST['email']);
+    $password = $_POST['password'];
+
+    $apiCall = 'https://claimywebservies.azurewebsites.net/api/Users/'.$email;
+    $apiData = getRequest($apiCall);
+
+    $this->mapUserData($apiData, $user);
+
+    if ($email === $user->getEmail()) {
+        if ($security->isPasswordsAMatchOpenSSL($password, $security->openSSLDecrypt($user->getPassword()))) {
+
+            if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
+                echo 'index-controller.php';
+            }else{
+                echo 'signin-controller.php';
+            }
+
+        }
+        else{
+
+            //if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
+            echo 'signin-controller.php';
+            //}
+
+        }
+
+    } else {
+        //if($user->getUserType() === 'Employee' || $user->getUserType() === 'Admin'){
+        echo 'signin-controller.php';
+        //}
+
+    }
+}
+
+function mapUserData($apiData, $user){
+    if(!$apiData == null){
+        foreach ($apiData as $key => $value) {
+            if($value == null){
+                $value = 'NULL';
+            }
+            if($key === 'fld_UserID'){
+                $user->setUserID($value);
+            }
+            if($key === 'fld_Fullname'){
+                $user->setName($value);
+            }
+            if($key === 'fld_Email'){
+                $user->setEmail($value);
+            }
+            if($key === 'fld_PasswordHash'){
+                $user->setPassword($value);
+            }
+            if($key === 'fld_TypeID'){
+                if($value === 1 ){
+                    $user->setUserType('Admin');
+                }
+                if($value === 2){
+                    $user->setUserType('Employee');
+                }
+                if($value === 3){
+                    $user->setUserType('Client');
+                }
+            }
+        }
+    }
+}
+
+
+require '../view/under-maintenance.php';

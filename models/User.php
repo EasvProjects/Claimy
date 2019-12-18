@@ -5,7 +5,9 @@ class User {
     protected $email;
     protected $userID;
     protected $password;
-    // constructor
+    protected $userType;
+
+    // Dafault constructor
     public function __construct() {
     }
 
@@ -42,6 +44,14 @@ class User {
     }
 
     /**
+     * @param mixed $userType
+     */
+    public function setUserType($userType): void
+    {
+        $this->userType = $userType;
+    }
+
+    /**
      * @return mixed
      */
     public function getEmail()
@@ -72,5 +82,12 @@ class User {
     {
         return $this->password;
     }
+
+    /**
+     * @return mixed
+     */public function getUserType()
+{
+    return $this->userType;
+}
 
 }

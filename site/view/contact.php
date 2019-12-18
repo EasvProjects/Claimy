@@ -114,22 +114,22 @@
               <h2 class="form-title text-center mb-lg-3">Get in Touch</h2>
             </div>
             <div class="form-group col-12 ">
-             <input type="text" class="form-control w-100"  placeholder="Name" required="required"
+             <input type="text" class="form-control w-100" id="name-field" placeholder="Name" required="required"
              data-error="Name is required.">
              <div class="help-block with-errors"></div>
            </div>
            <div class="form-group col-12 ">
-             <input type="text" class="form-control w-100"  placeholder="E-mail" required="required"
+             <input type="text" class="form-control w-100" id="email-field" placeholder="E-mail" required="required"
              data-error="Valid email is required.">
              <div class="help-block with-errors"></div>
            </div>
            <div class="form-group col-12 ">
-             <input type="text" class="form-control w-100"  placeholder="Phone no." required="required"
+             <input type="text" class="form-control w-100" id="phone-field" placeholder="Phone no." required="required"
              data-error="Phone no. is required.">
              <div class="help-block with-errors"></div>
            </div>
            <div class="form-group col-12 ">
-            <textarea class="form-control w-100 h-auto" rows="3" placeholder="Message"></textarea>
+            <textarea class="form-control w-100 h-auto" rows="3" id="message-field" placeholder="Message"></textarea>
           </div>
 
           <div class="form-group col-12">
@@ -138,7 +138,7 @@
             <div class="help-block with-errors"></div>
           </div>
           <div class="col-12 text-lg-center">
-            <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0">Send</button>
+            <button type="submit" class="btn btn-primary btn-grd mt-3 w-100 border-0" onclick="sendContactFormEmail()">Send</button>
           </div>
         </div>
       </div>
