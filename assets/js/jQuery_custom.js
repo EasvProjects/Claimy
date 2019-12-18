@@ -9,16 +9,30 @@ function clientLoginAjax() {
         },
         datatype: 'json',
         success: function (data) {
-            window.location.href = data;
+            if(data === 'success'){
+                console.log(data);
+                window.location.href = '../../site/controllers/myaccount-controller.php';
+            }else if(data === 'errorUserNotFound'){
+                console.log(data);
+                alert('We don\'t have any user registered with that email.');
+                window.location.href = '../../site/controllers/signin-controller.php';
+            }else if(data === 'errorPasswordNotMatch'){
+                console.log(data);
+                alert('The password you\'ve entered doesn\'t match the user. Try again.');
+                window.location.href = '../../site/controllers/signin-controller.php';
+            }else if(data === 'errorNotClintAccount'){
+                console.log(data);
+                alert('You\'re trying to login with an employee account. This login form is for users only.');
+                window.location.href = '../../site/controllers/signin-controller.php';
+            }
         }
     });
 }
 
-// TODO maybe add an if/else statement to check if return data corresponds to success address, else alert message to user.
 function empLoginAjax() {
     $.ajax({
         type: "POST",
-        url: '../../core/ajax.php',
+        url: '../../site/controllers/maintenance-controller.php',
         data: {
             action: 'empLogin',
             "email": $('#email-field').val(),
@@ -26,7 +40,10 @@ function empLoginAjax() {
         },
         datatype: 'json',
         success: function (data) {
-            window.location.href = data;
+            alert(data);
+        },
+        error: function(data){
+            console.log(data);
         }
     });
 }
@@ -47,9 +64,33 @@ function clientSignUp(){
         },
         datatype: 'json',
         success: function (data) {
-                 window.location.href = data;
+            alert(data);
+                 //window.location.href = data;
+        },
+        error: function(data){
+            console.log(data);
         }
 
     });
 }
 
+function sendContactFormEmail() {
+    $.ajax({
+        type: "POST",
+        url: '../../site/controllers/contact-controller.php',
+        data: {
+            action: 'activateContactForm',
+            "name": $('#name-field').val(),
+            "email": $('#email-field').val(),
+            "phone": $('#phone-field').val(),
+            "message": $('#message-field').val()
+        },
+        datatype: 'json',
+        success: function (data) {
+            alert(data);
+        },
+        error: function(data){
+            console.log(data);
+        }
+    });
+}
