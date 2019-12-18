@@ -15,7 +15,8 @@ function getRequest($url) {
         CURLOPT_POSTFIELDS => "",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "cache-control: no-cache"
+            "cache-control: no-cache",
+            "APIkey: 123456"
         ),
     ));
 
@@ -29,5 +30,36 @@ function getRequest($url) {
     } else {
         return $err;
     }
+
+}
+
+function postRequest($url, $data) {
+
+$curl = curl_init();
+
+$package = json_encode($data);
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_POST, 1);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $package);
+curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+            "Content-Type: application/json",
+            "cache-control: no-cache",
+            "APIkey: 123456"
+        ));
+
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+$server_output = curl_exec($curl);
+
+curl_close ($curl);
+
+if ($server_output === "OK")
+{
+    echo 'success';
+} else {
+    echo 'failure';
+}
+
+
 
 }
