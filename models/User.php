@@ -9,6 +9,7 @@ class User {
 
     // Dafault constructor
     public function __construct() {
+
     }
 
     /**

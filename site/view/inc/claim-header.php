@@ -1,4 +1,5 @@
 <head>
+
     <title>
         Claimy
     </title>
@@ -15,8 +16,10 @@
     <link href="../../../assets/css/uploader.min.css" rel="stylesheet">
     <link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
     <link href="../../../assets/fonts/icons/flaticon.css" type="text/css" rel="stylesheet" />
+
 </head>
 <body class="">
+
 <div class="main position-relative">
     <div class="">
         <header class="bg-grd">
