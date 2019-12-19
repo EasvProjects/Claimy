@@ -35,31 +35,30 @@ function getRequest($url) {
 
 function postRequest($url, $data) {
 
-$curl = curl_init();
+    //Initiate cURL.
+    $ch = curl_init($url);
 
-$package = json_encode($data);
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, 1);
-curl_setopt($curl, CURLOPT_POSTFIELDS, $package);
-curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            "Content-Type: application/json",
-            "cache-control: no-cache",
-            "APIkey: 123456"
-        ));
+    //Encode the array into JSON.
+    $jsonDataEncoded = json_encode($data);
 
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    //Tell cURL that we want to send a POST request.
+    curl_setopt($ch, CURLOPT_POST, 1);
 
-$server_output = curl_exec($curl);
+    //Attach our encoded JSON string to the POST fields.
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
 
-curl_close ($curl);
+    //Set the content type to application/json
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        "Content-Type: application/json",
+        "cache-control: no-cache",
+        "APIKey: 123456"
+    ));
 
-if ($server_output === "OK")
-{
-    echo 'success';
-} else {
-    echo 'failure';
-}
+    //Execute the request
+    curl_exec($ch);
 
 
 
 }
+
+

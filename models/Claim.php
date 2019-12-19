@@ -4,28 +4,21 @@ class Claim
 {
     protected $claimID;
     protected $customerEmail;
-   //protected $claimTimeDate;
-    //protected $userID;
-   // protected $countryID;
-   // protected $parkingCompany;
     protected $reasonID;
     protected $ticketNo;
-    //protected $ticketTimeDate;
     protected $ticketDueDate;
     protected $ticketFee;
     protected $ticketStreetName;
     protected $zipCode;
     protected $carRegNo;
-    // protected $carBrand;
-    // protected $carModel;
-    // protected $claimComment;
+    protected static $claimArray = [] ;
 
-    public function __construct($claimID, $customerEmail, $reasonID,
-                                $ticketNo, $ticketDueDate, $ticketFee, $ticketStreetName, $zipcode,
+
+    public function __construct($claimID, $reasonID,
+                                $ticketNo,$ticketDueDate, $ticketFee, $ticketStreetName, $zipcode,
                                 $carRegNo)
     {
         $this->claimID = $claimID;
-        $this->customerEmail = $customerEmail;
         $this->reasonID = $reasonID;
         $this->ticketNo = $ticketNo;
         $this->ticketDueDate = $ticketDueDate;
@@ -33,6 +26,22 @@ class Claim
         $this->ticketStreetName = $ticketStreetName;
         $this->zipCode = $zipcode;
         $this->carRegNo= $carRegNo;
+    }
+
+    /**
+     * @param array $claimArray
+     */
+    public static function setClaimArray(array $claimArray)
+    {
+        self::$claimArray = $claimArray;
+    }
+
+    /**
+     * @return array
+     */
+    public static function getClaimArray()
+    {
+        return self::$claimArray;
     }
 
 
@@ -69,6 +78,7 @@ class Claim
     {
         $this->ticketNo = $ticketNo;
     }
+
 
     /**
      * @param mixed $ticketFee
@@ -150,6 +160,7 @@ class Claim
     {
         return $this->ticketNo;
     }
+
 
     /**
      * @return mixed
