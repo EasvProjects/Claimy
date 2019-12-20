@@ -155,7 +155,7 @@
     <input type="checkbox" class="custom-control-input" id="check14">
     <label class="custom-control-label" for="check14">Rejected</label>
   </div>
- 
+
 </div>
 </div>
 <!---table search filter--->
@@ -164,62 +164,41 @@
 <table id="case_grid" class="table table-striped table-bordered table-responsive table-xs">
  <thead>
       <tr>
-          <th>Status</th>
+          <th>UserID</th>
+          <th>Type</th>
+          <th>Title</th>
+          <th>Fullname</th>
+          <th>E-mail</th>
+          <th>Signup Date</th>
           <th>Last action date</th>
-          <th>Action by</th>
-          <th>Case id</th>
-          <th>Receival date</th>
-          <th>Customer id</th>
-          <th>Customer name</th>
-          <th>Customer Address</th>
-          <th>Customer phone</th>
-          <th>Customer e-mail</th>
-          <th>Customer country</th>
-          <th>Ticket country</th>
-          <th>Parking company</th>
-          <th>Reason</th>
-          <th>Ticket no.</th>
-          <th>Ticket price/currency</th>
-          <th>Ticket date/time</th>
-          <th>Ticket Payment due date</th>
-          <th>Ticket address </th>
-          <th>Ticket postalcode and city</th>
-          <th>Car reg. no.</th>
-          <th>Car</th>
-          <th>Attachments</th>
-          <th>Comments</th>
-          <th>Action</th>
+          <th>Address</th>
+          <th>Country</th>
       </tr>
-</thead> 
- <tbody>
-            <tr>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-              <td>New</td>
-            </tr>
- </tbody>
+</thead>
+
+    <tbody>
+
+    <?php
+    foreach($userData as $key=>$value){
+        ?>
+
+        <tr>
+            <td><?php echo $value['fld_UserID'] ?></td>
+            <td><?php echo $value['fld_TypeID'] ?></td>
+            <td><?php echo $value['fld_Title'] ?></td>
+            <td><?php echo $value['fld_Fullname'] ?></td>
+            <td><?php echo $value['fld_Email'] ?></td>
+            <td><?php echo $value['fld_SignupTime'] ?></td>
+            <td><?php echo $value['fld_LastAction'] ?></td>
+            <td><?php echo $value['fld_CustomerAddress'] ?></td>
+            <td><?php echo $value['fld_CustomerCountry'] ?></td>
+
+        </tr>
+
+    <?php  } ?>
+
+    </tbody>
+
 </table>
 <!-- </div> -->
 </div>

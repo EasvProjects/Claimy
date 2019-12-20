@@ -9,18 +9,18 @@ function clientLoginAjax() {
         },
         datatype: 'json',
         success: function (data) {
-            if(data === 'success'){
+            if (data === 'success') {
                 console.log(data);
                 window.location.href = '../../site/controllers/myaccount-controller.php';
-            }else if(data === 'errorUserNotFound'){
+            } else if (data === 'errorUserNotFound') {
                 console.log(data);
                 alert('We don\'t have any user registered with that email.');
                 window.location.href = '../../site/controllers/signin-controller.php';
-            }else if(data === 'errorPasswordNotMatch'){
+            } else if (data === 'errorPasswordNotMatch') {
                 console.log(data);
                 alert('The password you\'ve entered doesn\'t match the user. Try again.');
                 window.location.href = '../../site/controllers/signin-controller.php';
-            }else if(data === 'errorNotClintAccount'){
+            } else if (data === 'errorNotClintAccount') {
                 console.log(data);
                 alert('You\'re trying to login with an employee account. This login form is for users only.');
                 window.location.href = '../../site/controllers/signin-controller.php';
@@ -42,13 +42,13 @@ function empLoginAjax() {
         success: function (data) {
             alert(data);
         },
-        error: function(data){
+        error: function (data) {
             console.log(data);
         }
     });
 }
 
-function clientSignUp(){
+function clientSignUp() {
     $.ajax({
         type: "POST",
         url: '../../core/ajax.php',
@@ -65,9 +65,9 @@ function clientSignUp(){
         datatype: 'json',
         success: function (data) {
             alert(data);
-                 //window.location.href = data;
+            //window.location.href = data;
         },
-        error: function(data){
+        error: function (data) {
             console.log(data);
         }
 
@@ -89,8 +89,28 @@ function sendContactFormEmail() {
         success: function (data) {
             alert(data);
         },
-        error: function(data){
+        error: function (data) {
             console.log(data);
         }
     });
 }
+
+function addCountryjQuery() {
+    $.ajax({
+        type: "POST",
+        url: '../../core/ajax.php',
+        data: {
+            action: 'addCountryButton',
+            "countryName": $('#countryField').val()
+        },
+        datatype: 'json',
+        success: function (data) {
+            alert(data);
+        },
+        error: function (data) {
+            console.log(data);
+        }
+
+    });
+}
+
