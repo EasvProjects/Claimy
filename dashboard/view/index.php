@@ -1,4 +1,4 @@
-doc	<!DOCTYPE html>
+<!DOCTYPE html>
   <html>
 
     <?php include 'inc/header.php'; ?>

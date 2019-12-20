@@ -1,6 +1,5 @@
 <?php
 
-
 require '../../models/Claim.php';
 require '../../api/apiRequests.php';
 require '../../models/Country.php';

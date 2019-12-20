@@ -39,7 +39,7 @@
                           <a class="dropdown-item" href="../../dashboard/controllers/employees-list-controller.php">Employees</a>
                           <a class="dropdown-item active" href="../../dashboard/controllers/system-log-controller.php">System log</a>
                           <a class="dropdown-item" href="../../dashboard/controllers/global-controller.php">Global</a>
-                          <a class="dropdown-item ml-2" href="../../dashboard/controllers/coutries-controller.php">- Supported
+                          <a class="dropdown-item ml-2" href="../controllers/countries-controller.php">- Supported
                               Countries</a>
                           <a class="dropdown-item ml-2" href="../../dashboard/controllers/language-controller.php">- Website Languages</a>
                           <a class="dropdown-item" href="../../dashboard/controllers/maintenance-controller.php">Offline mode </a>
@@ -73,7 +73,7 @@
                       <li><a class="nav-link active" href="../../dashboard/controllers/system-log-controller.php">System log</a></li>
                       <li><a class="nav-link" href="../../dashboard/controllers/global-controller.php">Global</a>
                           <ul class="list-unstyled ">
-                              <li><a class="nav-link" href="../../dashboard/controllers/coutries-controller.php">- Supported
+                              <li><a class="nav-link" href="../controllers/countries-controller.php">- Supported
                                       Countries</a></li>
                               <li><a class="nav-link" href="../../dashboard/controllers/language-controller.php">- Website Languages</a></li>
                           </ul>

@@ -16,7 +16,6 @@ $arrayOfClaims = [];
 $user = new User();
 
 if($apiData != null){
-
     foreach($apiData as $array){
         foreach ($array as $key => $value) {
             if($value == null){
@@ -50,6 +49,7 @@ if($apiData != null){
                 $carRegNo= $value;
             }
         }
+
         if($apiDataUser != null){
             foreach ($apiDataUser as $key => $value) {
                 if($value == null){
@@ -64,6 +64,5 @@ if($apiData != null){
             $ticketFee, $ticketDueDate, $ticketStreetName, $zipCode, $carRegNo);
     }
 }
-
 
 require '../view/index.php';

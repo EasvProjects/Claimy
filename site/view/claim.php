@@ -68,15 +68,13 @@ C/O https://placeholder.com/" alt="your image" width="100" />
                  <div class="form-group row">
                    <label for="country" class="col-sm-12 col-form-label">Country where the ticket was issued</label>
                    <div class="col-sm-12">
+
                      <select class="form-control" id="country" name="country" >
                          <?php foreach($arrayOfCountries as $key=>$value): ?>
                                      <option value="<?php echo $value; ?>">
                                          <?php  echo $value;  ?>
                                      </option>
                          <?php endforeach; ?>
-
-
-
                     </select>
                   </div>
                 </div>
@@ -118,9 +116,9 @@ C/O https://placeholder.com/" alt="your image" width="100" />
                 <input type="text" name="new_reason" class="form-control">
               </div>
             </div>
-
                       <!-- Ticket number text field--->
             <div class="form-group row">
+              
              <label class="col-sm-12 col-form-label">Ticket no.</label>
              <div class="col-sm-12">
               <input type="text" name="ticketNo" class="form-control" id="ticketNo" >
