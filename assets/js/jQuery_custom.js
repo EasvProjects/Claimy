@@ -94,3 +94,9 @@ function sendContactFormEmail() {
         }
     });
 }
+
+function addCountry(){
+    alert('Test');
+    }
+
+

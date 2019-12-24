@@ -254,7 +254,7 @@
  <div class="divider"></div>
 <div class="form-actions form-group">
   <a href="../../dashboard/controllers/global-controller.php" class="btn btn-alt">Cancel</a>
-  <a href="../../dashboard/controllers/global-controller.php" class="btn btn-grd">Add</a>
+  <a href="../../dashboard/controllers/global-controller.php" class="btn btn-grd" onclick="addCountry()">Add</a>
 </div>
 </div>
 </div>
